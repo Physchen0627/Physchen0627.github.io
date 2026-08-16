@@ -35,12 +35,4 @@ permalink: /gallery/japan-2026/
 
 *Osaka castle*
 
-### Kyoto
-
-<img src="{{ '/images/gallery/japan-2026/kyoto-university.jpg' | relative_url }}"
-     alt="Kyoto university"
-     style="max-width: 100%; height: auto;">
-
-*Kyoto university*
-
 </div>
