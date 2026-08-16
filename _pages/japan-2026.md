@@ -91,4 +91,12 @@ permalink: /gallery/japan-2026/
 
 *Eikando-temple*
 
+### Tokyo
+
+<img src="{{ '/images/gallery/japan-2026/tokyotower.jpg' | relative_url }}"
+     alt="Tokyo tower"
+     style="max-width: 100%; height: auto;">
+
+*Tokyo tower*
+
 </div>
