@@ -29,4 +29,18 @@ permalink: /gallery/japan-2026/
 
 *Tsutenkaku tower*
 
+<img src="{{ '/images/gallery/japan-2026/osaka-castle.jpg' | relative_url }}"
+     alt="Osaka castle"
+     style="max-width: 100%; height: auto;">
+
+*Osaka castle*
+
+### Kyoto
+
+<img src="{{ '/images/gallery/japan-2026/kyoto-university.jpg' | relative_url }}"
+     alt="Kyoto university"
+     style="max-width: 100%; height: auto;">
+
+*Kyoto university*
+
 </div>
