@@ -49,4 +49,10 @@ permalink: /gallery/japan-2026/
 
 *Campus*
 
+<img src="{{ '/images/gallery/japan-2026/dryukawa.jpg' | relative_url }}"
+     alt="Dr.Yukawa"
+     style="max-width: 100%; height: auto;">
+
+*Dr.Yukawa*
+
 </div>
