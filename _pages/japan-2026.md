@@ -61,4 +61,10 @@ permalink: /gallery/japan-2026/
 
 *Kinkaku temple*
 
+<img src="{{ '/images/gallery/japan-2026/kiyomizu-dera.jpg' | relative_url }}"
+     alt="kiyomizu-dera"
+     style="max-width: 100%; height: auto;">
+
+*Kiyomizu temple*
+
 </div>
