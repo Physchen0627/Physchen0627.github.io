@@ -67,4 +67,10 @@ permalink: /gallery/japan-2026/
 
 *Kiyomizu temple*
 
+<img src="{{ '/images/gallery/japan-2026/kamo-river.jpg' | relative_url }}"
+     alt="Kamo river"
+     style="max-width: 100%; height: auto;">
+
+*Kamo river*
+
 </div>
