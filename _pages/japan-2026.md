@@ -73,4 +73,16 @@ permalink: /gallery/japan-2026/
 
 *Kamo river*
 
+<img src="{{ '/images/gallery/japan-2026/fushimi-inari-taisha.jpg' | relative_url }}"
+     alt="Fushimi inari-taisha"
+     style="max-width: 100%; height: auto;">
+
+*Fushimi inari-taisha*
+
+<img src="{{ '/images/gallery/japan-2026/uji--Daikichiyama.jpg' | relative_url }}"
+     alt="uji--Daikichiyama"
+     style="max-width: 100%; height: auto;">
+
+*Uji-Daikichi mountain*
+
 </div>
