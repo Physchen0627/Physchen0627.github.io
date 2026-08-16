@@ -1,13 +1,19 @@
 ---
-layout: page
-title: Gallery
+title: "Gallery"
+layout: gridlay
+sitemap: false
 permalink: /gallery/
 ---
 
+## Gallery
 A collection of photographs from my travels, academic life, and everyday moments.
 
-## Travel
+<div class="section-card" markdown="0">
 
-<img src="{{ '/images/gallery/the-tower-of-sun.jpg' | relative_url }}" alt="Tower of the Sun, Osaka" style="max-width: 100%; height: auto;">
+<div class="news-item" style="padding: 1rem 0; border-bottom: 1px solid var(--border-color);">
+<a href="{{ '/gallery/japan-2026/' | relative_url }}" style="font-weight: 600;">
+Japan, Summer 2026
+</a>
+</div>
 
-*Osaka, Japan*
+</div>
