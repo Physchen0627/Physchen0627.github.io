@@ -79,4 +79,10 @@ permalink: /gallery/japan-2026/
 
 *Fushimi inari-taisha*
 
+<img src="{{ '/images/gallery/japan-2026/uji--Daikichiyama.jpg' | relative_url }}"
+     alt="uji--Daikichiyama"
+     style="max-width: 100%; height: auto;">
+
+*Uji-Daikichi mountain*
+
 </div>
