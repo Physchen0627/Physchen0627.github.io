@@ -85,4 +85,10 @@ permalink: /gallery/japan-2026/
 
 *Uji-Daikichi mountain*
 
+<img src="{{ '/images/gallery/japan-2026/eikando-temple.jpg' | relative_url }}"
+     alt="uji--Daikichiyama"
+     style="max-width: 100%; height: auto;">
+
+*Eikando-temple*
+
 </div>
