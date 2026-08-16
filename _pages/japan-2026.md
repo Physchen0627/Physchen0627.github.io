@@ -55,4 +55,10 @@ permalink: /gallery/japan-2026/
 
 *Dr.Yukawa*
 
+<img src="{{ '/images/gallery/japan-2026/kinkaku-ji.jpg' | relative_url }}"
+     alt="Kinkaku-ji"
+     style="max-width: 100%; height: auto;">
+
+*Kinkaku temple*
+
 </div>
