@@ -43,4 +43,10 @@ permalink: /gallery/japan-2026/
 
 *Kyoto university*
 
+<img src="{{ '/images/gallery/japan-2026/campus.jpg' | relative_url }}"
+     alt="campus"
+     style="max-width: 100%; height: auto;">
+
+*Campus*
+
 </div>
