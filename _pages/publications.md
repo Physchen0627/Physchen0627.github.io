@@ -7,18 +7,14 @@ permalink: /publications/
 
 ## Publications
 
-<input type="text" class="pub-search" id="pubSearch" placeholder="Filter by title, author, or year...">
-
-<div class="section-card" id="pubList">
-<h3>Preprints</h3>
-
-{% bibliography --query @unpublished %}
+<div class="section-card">
 
 <h3>Refereed Journal Articles</h3>
 
-{% bibliography --query @article %}
+Coming soon.
 
-<h3>Refereed Conference Proceedings</h3>
+<h3>Preprints</h3>
 
-{% bibliography --query @inproceedings %}
+Coming soon.
+
 </div>
