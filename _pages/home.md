@@ -4,9 +4,8 @@ layout: homelay
 sitemap: false
 permalink: /
 ---
+I'm a Master's candidate in Physics, Huazhong University of Science and Technology.\\
 
-### Research
 
-My research interests focus on quantum information and quantum computation. For more informaiton, please see the [Research]({{ '/research/' | relative_url }}) page.
 
 
