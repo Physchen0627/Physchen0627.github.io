@@ -12,7 +12,7 @@ permalink: /cv/
 
 **Sep 2025 – Present**  
 M.S. in Physics  
-Huazhong University of Science and Technology， Wuhan, China
+Huazhong University of Science and Technology, Wuhan, China
 
 **Sep 2019 – Jun 2023**  
 B.S. in Physics  
