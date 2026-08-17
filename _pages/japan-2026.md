@@ -77,7 +77,7 @@ permalink: /gallery/japan-2026/
      alt="Fushimi inari-taisha"
      style="max-width: 100%; height: auto;">
 
-*Fushimi inari-taisha*
+*Fushimi Inari-taisha*
 
 <img src="{{ '/images/gallery/japan-2026/uji.jpg' | relative_url }}"
      alt="uji"
@@ -89,7 +89,7 @@ permalink: /gallery/japan-2026/
      alt="uji--Daikichiyama"
      style="max-width: 100%; height: auto;">
 
-*Eikando-temple*
+*Eikando temple*
 
 ### Tokyo
 
