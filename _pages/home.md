@@ -4,8 +4,23 @@ layout: homelay
 sitemap: false
 permalink: /
 ---
-I'm a Master's candidate in Physics, Huazhong University of Science and Technology.
 
+<img src="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}"
+     alt="{{ site.name }}"
+     style="max-width: 260px; width: 100%; height: auto; margin-bottom: 1.5rem;">
 
+I am a Master's student in Physics at Huazhong University of Science and Technology. My research interests lie in theoretical physics and quantum information, with a particular focus on quantum error correction in superconducting quantum circuits.
 
+---
 
+### Contact
+
+- Email: [Physchen0627@gmail.com](mailto:Physchen0627@gmail.com)
+
+---
+
+### Links
+
+- Google Scholar: [https://scholar.google.com/citations?user=B7vSqZsAAAAJ](https://scholar.google.com/citations?user=B7vSqZsAAAAJ)
+- GitHub: [https://github.com/Physchen0627](https://github.com/Physchen0627)
+- Orcid: [https://orcid.org/my-orcid?orcid=0009-0001-6170-5800](https://orcid.org/my-orcid?orcid=0009-0001-6170-5800)
