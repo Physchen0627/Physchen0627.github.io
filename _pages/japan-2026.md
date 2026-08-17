@@ -135,4 +135,10 @@ permalink: /gallery/japan-2026/
 
 *Kamakurae-Enoshima*
 
+<img src="{{ '/images/gallery/japan-2026/shichirigahamabeach.jpg' | relative_url }}"
+     alt="shichirigahamabeach"
+     style="max-width: 100%; height: auto;">
+
+*Shichirigahama beach*
+
 </div>
