@@ -117,4 +117,10 @@ permalink: /gallery/japan-2026/
 
 *Sensoji temple*
 
+<img src="{{ '/images/gallery/japan-2026/yourname.jpg' | relative_url }}"
+     alt="yourname"
+     style="max-width: 100%; height: auto;">
+
+*"Your name?"*
+
 </div>
