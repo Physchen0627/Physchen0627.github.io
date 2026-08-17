@@ -25,4 +25,4 @@ And, of course, I remain curious about the physical world in all its forms.
 
 - Google Scholar: 
 - GitHub: [https://github.com/Physchen0627](https://github.com/Physchen0627)
-- Orcid: [https://orcid.org/my-orcid?orcid=0009-0001-6170-5800](https://orcid.org/my-orcid?orcid=0009-0001-6170-5800)
+- Orcid: [https://orcid.org/0009-0001-6170-5800](https://orcid.org/0009-0001-6170-5800)
