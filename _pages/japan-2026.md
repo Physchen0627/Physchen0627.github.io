@@ -99,4 +99,16 @@ permalink: /gallery/japan-2026/
 
 *Tokyo tower*
 
+<img src="{{ '/images/gallery/japan-2026/tokyouniversity.jpg' | relative_url }}"
+     alt="Tokyo university"
+     style="max-width: 100%; height: auto;">
+
+*Tokyo university*
+
+<img src="{{ '/images/gallery/japan-2026/akihabara.jpg' | relative_url }}"
+     alt="akihabara"
+     style="max-width: 100%; height: auto;">
+
+*Akihabara*
+
 </div>
