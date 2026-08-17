@@ -123,4 +123,16 @@ permalink: /gallery/japan-2026/
 
 *"Your name?"*
 
+<img src="{{ '/images/gallery/japan-2026/meijishrine.jpg' | relative_url }}"
+     alt="meijishrine"
+     style="max-width: 100%; height: auto;">
+
+*Meji shrine*
+
+<img src="{{ '/images/gallery/japan-2026/kamakuraenoshima.jpg' | relative_url }}"
+     alt="kamakuraenoshima"
+     style="max-width: 100%; height: auto;">
+
+*Kamakurae-Enoshima*
+
 </div>
