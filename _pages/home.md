@@ -9,7 +9,9 @@ permalink: /
      alt="{{ site.name }}"
      style="max-width: 260px; width: 100%; height: auto; margin-bottom: 1.5rem;">
 
-I am a Master's student in Physics at Huazhong University of Science and Technology. My research interests lie in theoretical physics and quantum information, with a particular focus on quantum error correction in superconducting quantum circuits.
+I am a Master's student in Physics at Huazhong University of Science and Technology. 
+My research interests lie in theoretical physics and quantum computing, with a particular focus on quantum error correction in superconducting quantum circuits.
+And, of course, I remain curious about the physical world in all its forms.
 
 ---
 
