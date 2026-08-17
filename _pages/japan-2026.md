@@ -111,4 +111,10 @@ permalink: /gallery/japan-2026/
 
 *Akihabara*
 
+<img src="{{ '/images/gallery/japan-2026/sensojitemple.jpg' | relative_url }}"
+     alt="sensojitemple"
+     style="max-width: 100%; height: auto;">
+
+*Sensoji temple*
+
 </div>
