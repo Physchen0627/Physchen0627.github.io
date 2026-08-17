@@ -10,7 +10,7 @@ permalink: /
      style="max-width: 260px; width: 100%; height: auto; margin-bottom: 1.5rem;">
 
 I am a Master's student in Physics at Huazhong University of Science and Technology.<br> 
-My research interests lie in theoretical physics and quantum computing, with a particular focus on quantum error correction in superconducting quantum circuits.<br>
+My research interests lie in **theoretical physics** and **quantum computing**, with a particular focus on **quantum error correction in superconducting quantum circuits**.<br>
 And, of course, I remain curious about the physical world in all its forms.
 
 ---
@@ -23,6 +23,6 @@ And, of course, I remain curious about the physical world in all its forms.
 
 ### Links
 
-- Google Scholar: [https://scholar.google.com/citations?user=B7vSqZsAAAAJ](https://scholar.google.com/citations?user=B7vSqZsAAAAJ)
+- Google Scholar: 
 - GitHub: [https://github.com/Physchen0627](https://github.com/Physchen0627)
 - Orcid: [https://orcid.org/my-orcid?orcid=0009-0001-6170-5800](https://orcid.org/my-orcid?orcid=0009-0001-6170-5800)
