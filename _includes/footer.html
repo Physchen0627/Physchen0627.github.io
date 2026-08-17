@@ -1,7 +1,13 @@
 <footer class="site-footer">
-  <div class="container">
+  <div class="container footer-minimal">
     <p>
-      © {{ site.time | date: "%Y" }} {{ site.name }} · Powered by Jekyll
+      &copy; {{ "now" | date: "%Y" }}
+      <a href="{{ '/' | relative_url }}">{{ site.name }}</a>
+      · Powered by
+      <a href="https://jekyllrb.com/">Jekyll</a>
     </p>
   </div>
 </footer>
+
+<script src="{{ "/assets/javascript/bootstrap/bootstrap.bundle.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/site.min.js" | relative_url }}"></script>
