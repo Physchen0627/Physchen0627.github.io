@@ -35,11 +35,14 @@
   }
 
   a {
-    font-size: 0.8125rem;
-    color: var(--text-secondary);
+  font-size: 0.8125rem;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
 
-    &:hover {
-      color: var(--accent);
-    }
+  &:hover {
+    color: var(--accent);
+    opacity: 0.8;
   }
+}
 }
