@@ -1,13 +1,40 @@
 <footer class="site-footer">
-  <div class="container" style="text-align: center;">
-    <p style="margin: 0;">
+  <div class="container">
+
+    <div id="site-age" class="site-age"></div>
+
+    <p>
       &copy; {{ "now" | date: "%Y" }}
       <a href="{{ '/' | relative_url }}">{{ site.name }}</a>
       · Powered by
       <a href="https://jekyllrb.com/">Jekyll</a>
     </p>
+
   </div>
 </footer>
 
 <script src="{{ "/assets/javascript/bootstrap/bootstrap.bundle.min.js" | relative_url }}"></script>
 <script src="{{ "/assets/js/site.min.js" | relative_url }}"></script>
+
+<script>
+(function () {
+  const launchDate = new Date("2026-08-17T00:00:00+08:00");
+
+  function updateSiteAge() {
+    const now = new Date();
+    const diff = now - launchDate;
+
+    if (diff < 0) return;
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const siteAge = document.getElementById("site-age");
+
+    if (siteAge) {
+      siteAge.textContent =
+        `Website online for ${days} ${days === 1 ? "day" : "days"} · Since 17 August 2026`;
+    }
+  }
+
+  updateSiteAge();
+})();
+</script>
