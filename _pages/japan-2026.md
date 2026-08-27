@@ -15,7 +15,7 @@ permalink: /gallery/japan-2026/
      alt="The tower of Sun"
      style="max-width: 100%; height: auto;">
 
-*The tower of Sun*
+*Tower of the Sun*
 
 <img src="{{ '/images/gallery/japan-2026/glico-man.jpg' | relative_url }}"
      alt="Glico man"
