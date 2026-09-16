@@ -50,10 +50,10 @@ permalink: /gallery/japan-2026/
 *Campus*
 
 <img src="{{ '/images/gallery/japan-2026/dryukawa.jpg' | relative_url }}"
-     alt="Dr.Yukawa"
+     alt="Prof.Dr.Yukawa"
      style="max-width: 100%; height: auto;">
 
-*Dr.Yukawa*
+*Prof.Dr.Yukawa*
 
 <img src="{{ '/images/gallery/japan-2026/kinkaku-ji.jpg' | relative_url }}"
      alt="Kinkaku-ji"
