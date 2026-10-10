@@ -40,22 +40,13 @@ excerpt: "2026 年秋季高等量子力学作业汇总，包含球坐标下的�
 
 <section class="section-card aqm-overview" aria-labelledby="aqm-overview-title">
   <h3 id="aqm-overview-title">高等量子力学作业汇总</h3>
-  <p>本页汇总 2026 年秋季高等量子力学课程的作业题目，后续作业继续追加于此。</p>
+  <p>本页汇总 2026 年秋季高等量子力学课程的作业题目。</p>
   <p class="text-muted aqm-updated">
     最近更新：<time datetime="{{ page.last_updated | date: '%Y-%m-%d' }}">{{ page.last_updated | date: "%Y-%m-%d" }}</time>
-    &middot; {{ page.assignment_count }} 次作业 &middot; {{ page.status }}
-  </p>
-  <p class="aqm-toc-title" id="aqm-toc-title">作业目录</p>
-  <nav class="aqm-toc" aria-labelledby="aqm-toc-title">
-    <a class="chip" href="#assignment-1">作业一</a>
-    <a class="chip" href="#assignment-2">作业二</a>
-    <a class="chip" href="#assignment-3">作业三</a>
-  </nav>
 </section>
 
 <section class="section-card aqm-assignment" id="assignment-1" aria-labelledby="assignment-1-title">
   <h3 id="assignment-1-title">作业一</h3>
-  <p class="aqm-topic">球坐标中的轨道角动量与空间平移</p>
 
   <h4>1. 球坐标下的轨道角动量算符</h4>
   <p>推导轨道角动量算符 \(\hat L_x\) 和 \(\hat L_y\) 在球坐标 \((r,\theta,\varphi)\) 下的微分算符表达式。</p>
@@ -99,7 +90,6 @@ excerpt: "2026 年秋季高等量子力学作业汇总，包含球坐标下的�
   \end{aligned}
   \]
   </div>
-  <p class="aqm-note">教材：J. J. Sakurai 与 Jim Napolitano，<em>Modern Quantum Mechanics</em>，第二版，第一章习题第 1.30、1.31 题（第 64 页）。教材题目及公式引用以原书为准。</p>
 </section>
 
 <section class="section-card aqm-assignment" id="assignment-2" aria-labelledby="assignment-2-title">
@@ -168,6 +158,5 @@ excerpt: "2026 年秋季高等量子力学作业汇总，包含球坐标下的�
   <p>其中 \(\hat H_0\) 为不显含时间的未扰动哈密顿量，最后一项表示算符本身显含时间时的贡献。</p>
 </section>
 
-<p class="aqm-bottom"><a href="{{ '/blogs/' | relative_url }}">&larr; 返回 Blogs</a></p>
 </div>
 
