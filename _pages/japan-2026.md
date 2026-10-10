@@ -5,7 +5,7 @@ sitemap: false
 permalink: /gallery/japan-2026/
 ---
 
-## Japan, Summer 2026
+## 2026 Summer, Japan
 
 <div class="section-card">
 
