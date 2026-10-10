@@ -1,6 +1,6 @@
 ---
 layout: coursework
-title: "2026 Autumn, Advanced Quantum Mechanics"
+title: "Advanced Quantum Mechanics, Autumn 2026"
 date: 2026-10-10
 last_updated: 2026-10-10
 permalink: /blogs/2026-autumn-advanced-quantum-mechanics/
