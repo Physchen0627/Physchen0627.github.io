@@ -56,7 +56,8 @@ course_id: aqm-2026-autumn
     </p>
   </section>
 
-  <section class="section-card" id="assignment-1">
+  <section class="section-card">
+
     <h3>作业一</h3>
 
     <p>1. 推导球坐标下的 \(\hat L_x\) 和 \(\hat L_y\) 算符。</p>
