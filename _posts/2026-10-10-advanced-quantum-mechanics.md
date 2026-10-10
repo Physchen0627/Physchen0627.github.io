@@ -1,18 +1,12 @@
 ---
 layout: post
 title: "2026 Autumn, Advanced Quantum Mechanics"
-date: 2026-10-10
-last_updated: 2026-10-10
 permalink: /blogs/2026-autumn-advanced-quantum-mechanics/
 author: "Chen Gong"
 categories: [Coursework]
 tags: [Physics, Quantum Mechanics]
 coursework: true
 course_id: aqm-2026-autumn
-semester: "2026 Autumn"
-assignment_count: 3
-status: "持续更新"
-excerpt: "2026 年秋季高等量子力学作业汇总，包含球坐标下的轨道角动量、空间平移、电磁场中的电流密度、含时谐振子和相互作用绘景。"
 ---
 
 <style>
@@ -43,6 +37,7 @@ excerpt: "2026 年秋季高等量子力学作业汇总，包含球坐标下的�
   <p>本页汇总 2026 年秋季高等量子力学课程的作业题目。</p>
   <p class="text-muted aqm-updated">
     最近更新：<time datetime="{{ page.last_updated | date: '%Y-%m-%d' }}">{{ page.last_updated | date: "%Y-%m-%d" }}</time>
+
 </section>
 
 <section class="section-card aqm-assignment" id="assignment-1" aria-labelledby="assignment-1-title">
@@ -94,7 +89,6 @@ excerpt: "2026 年秋季高等量子力学作业汇总，包含球坐标下的�
 
 <section class="section-card aqm-assignment" id="assignment-2" aria-labelledby="assignment-2-title">
   <h3 id="assignment-2-title">作业二</h3>
-  <p class="aqm-topic">电磁场中的电流密度</p>
 
   <p>已知哈密顿量</p>
   <div class="aqm-equation">
@@ -120,7 +114,6 @@ excerpt: "2026 年秋季高等量子力学作业汇总，包含球坐标下的�
 
 <section class="section-card aqm-assignment" id="assignment-3" aria-labelledby="assignment-3-title">
   <h3 id="assignment-3-title">作业三</h3>
-  <p class="aqm-topic">含时谐振子与相互作用绘景</p>
 
   <h4>1. 含时谐振子的平均占据数</h4>
   <p>已知哈密顿量</p>
