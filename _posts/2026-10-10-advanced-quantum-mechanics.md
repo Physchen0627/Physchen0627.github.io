@@ -38,8 +38,6 @@ course_id: aqm-2026-autumn
   <p class="text-muted aqm-updated">
     最近更新：<time datetime="{{ page.last_updated | date: '%Y-%m-%d' }}">{{ page.last_updated | date: "%Y-%m-%d" }}</time>
 
-</section>
-
 <section class="section-card aqm-assignment" id="assignment-1" aria-labelledby="assignment-1-title">
   <h3 id="assignment-1-title">作业一</h3>
 
@@ -151,5 +149,5 @@ course_id: aqm-2026-autumn
   <p>其中 \(\hat H_0\) 为不显含时间的未扰动哈密顿量，最后一项表示算符本身显含时间时的贡献。</p>
 </section>
 
-</div>
+
 
