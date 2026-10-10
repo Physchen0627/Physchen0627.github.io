@@ -30,6 +30,7 @@ coursework: true
     <h3>2026 年秋季高等量子力学作业汇总</h3>
     <p>助教办公室：逸夫科技楼南411</p>
     <p>已更新作业次数：{{ page.assignment_count }}</p>
+    <p><style="color: #d32f2f;">仅作参考，一切请以老师上课布置为准!</p>
     <p class="text-muted aqm-updated">
       最近更新日期：<time datetime="{{ page.last_updated }}">{{ page.last_updated }}</time>
     </p>
