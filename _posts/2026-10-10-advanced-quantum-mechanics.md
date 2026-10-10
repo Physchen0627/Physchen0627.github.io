@@ -62,9 +62,7 @@ course_id: aqm-2026-autumn
     <p>1. 推导球坐标下的 \(\hat L_x\) 和 \(\hat L_y\) 算符。</p>
 
     <p>2. 樱井纯《现代量子力学》第二版，第 1.30 和 1.31 题。</p>
-  </section>
-
-  <section class="section-card" id="assignment-2">
+ 
     <h3>作业二</h3>
 
     <p>已知哈密顿量</p>
@@ -89,9 +87,7 @@ course_id: aqm-2026-autumn
     </div>
 
     <p>在极坐标中表示电流密度 \(\boldsymbol j\)。</p>
-  </section>
 
-  <section class="section-card" id="assignment-3">
     <h3>作业三</h3>
 
     <p>1. 已知哈密顿量</p>
