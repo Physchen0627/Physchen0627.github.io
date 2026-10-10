@@ -1,153 +1,136 @@
 ---
-layout: post
+layout: coursework
 title: "2026 Autumn, Advanced Quantum Mechanics"
+date: 2026-10-10
+last_updated: 2026-10-10
 permalink: /blogs/2026-autumn-advanced-quantum-mechanics/
-author: "Chen Gong"
-categories: [Coursework]
-tags: [Physics, Quantum Mechanics]
 coursework: true
 course_id: aqm-2026-autumn
 ---
 
 <style>
-.aqm-course .aqm-overview { margin-top: var(--space-6); }
-.aqm-course .aqm-updated { font-size: 0.875rem; margin-bottom: var(--space-4); }
-.aqm-course .aqm-toc-title { margin: var(--space-6) 0 var(--space-3); font-weight: 600; color: var(--text-primary); }
-.aqm-course .aqm-toc { display: flex; flex-wrap: wrap; gap: var(--space-2); }
-.aqm-course .aqm-assignment { scroll-margin-top: 6rem; }
-.aqm-course .aqm-assignment h4 { margin-top: var(--space-8); }
-.aqm-course .aqm-topic { color: var(--accent); font-size: 0.8125rem; margin-bottom: var(--space-6); }
-.aqm-course .aqm-equation { max-width: 100%; overflow-x: auto; overflow-y: hidden; padding: 0.25rem 0; }
-.aqm-course .aqm-equation mjx-container[display="true"] { margin: 1rem 0 !important; }
-.aqm-course .aqm-note { font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0; }
-.aqm-course .aqm-bottom { font-size: 0.875rem; margin: var(--space-8) 0; }
-@media (max-width: 600px) {
-  .aqm-course .section-card { padding: var(--space-6); }
-  .aqm-course .aqm-equation { font-size: 0.9rem; }
+.aqm-course > h2 {
+  margin-top: 0;
 }
-@media (prefers-reduced-motion: reduce) {
-  .aqm-course .aqm-assignment { scroll-behavior: auto; }
+
+.aqm-course .aqm-updated {
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+.aqm-course .aqm-equation {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0;
+}
+
+.aqm-course .aqm-equation mjx-container[display="true"] {
+  margin: 1rem 0 !important;
+}
+
+@media (max-width: 600px) {
+  .aqm-course .section-card {
+    padding: var(--space-6);
+  }
+
+  .aqm-course .aqm-equation {
+    font-size: 0.9rem;
+  }
 }
 </style>
 
 <div class="aqm-course" lang="zh-CN" markdown="0">
 
-<section class="section-card aqm-overview" aria-labelledby="aqm-overview-title">
-  <h3 id="aqm-overview-title">高等量子力学作业汇总</h3>
-  <p>本页汇总 2026 年秋季高等量子力学课程的作业题目。</p>
-  <p class="text-muted aqm-updated">
-    最近更新：<time datetime="{{ page.last_updated | date: '%Y-%m-%d' }}">{{ page.last_updated | date: "%Y-%m-%d" }}</time>
+  <h2>{{ page.title | escape }}</h2>
 
-<section class="section-card aqm-assignment" id="assignment-1" aria-labelledby="assignment-1-title">
-  <h3 id="assignment-1-title">作业一</h3>
+  <section class="section-card">
+    <h3>高等量子力学作业汇总</h3>
+    <p>本页汇总 2026 年秋季高等量子力学课程的作业题目。</p>
+    <p class="text-muted aqm-updated">
+      最近更新日期：
+      <time datetime="{{ page.last_updated | date: '%Y-%m-%d' }}">
+        {{ page.last_updated | date: "%Y-%m-%d" }}
+      </time>
+    </p>
+  </section>
 
-  <h4>1. 球坐标下的轨道角动量算符</h4>
-  <p>推导轨道角动量算符 \(\hat L_x\) 和 \(\hat L_y\) 在球坐标 \((r,\theta,\varphi)\) 下的微分算符表达式。</p>
-  <p>采用坐标约定</p>
-  <div class="aqm-equation">
-  \[
-  \begin{aligned}
-  x&=r\sin\theta\cos\varphi,\\
-  y&=r\sin\theta\sin\varphi,\\
-  z&=r\cos\theta.
-  \end{aligned}
-  \]
-  </div>
-  <p>从下列定义出发进行推导：</p>
-  <div class="aqm-equation">
-  \[
-  \hat{\boldsymbol L}=\boldsymbol r\times\hat{\boldsymbol p},
-  \qquad \hat{\boldsymbol p}=-i\hbar\nabla.
-  \]
-  </div>
+  <section class="section-card" id="assignment-1">
+    <h3>作业一</h3>
 
-  <h4>2. 樱井纯《现代量子力学》第二版，第 1.30 题</h4>
-  <p>题目内容概述：对于有限空间平移算符</p>
-  <div class="aqm-equation">
-  \[
-  \hat T(\boldsymbol\ell)
-  =\exp\!\left(-\frac{i}{\hbar}\hat{\boldsymbol p}\cdot\boldsymbol\ell\right),
-  \]
-  </div>
-  <p>计算其与位置分量的对易子 \([\hat x_i,\hat T(\boldsymbol\ell)]\)，并据此分析空间平移后位置期望值的变化。</p>
+    <p>1. 推导球坐标下的 \(\hat L_x\) 和 \(\hat L_y\) 算符。</p>
 
-  <h4>3. 樱井纯《现代量子力学》第二版，第 1.31 题</h4>
-  <p>题目内容概述：利用无穷小平移算符与正则对易关系，证明对量子态实施空间位移 \(d\boldsymbol x'\) 后，位置期望值增加 \(d\boldsymbol x'\)，动量期望值保持不变：</p>
-  <div class="aqm-equation">
-  \[
-  \begin{aligned}
-  \langle\boldsymbol x\rangle
-  &\longrightarrow \langle\boldsymbol x\rangle+d\boldsymbol x',\\
-  \langle\boldsymbol p\rangle
-  &\longrightarrow \langle\boldsymbol p\rangle.
-  \end{aligned}
-  \]
-  </div>
-</section>
+    <p>2. 樱井纯《现代量子力学》第二版，第 1.30 和 1.31 题。</p>
+  </section>
 
-<section class="section-card aqm-assignment" id="assignment-2" aria-labelledby="assignment-2-title">
-  <h3 id="assignment-2-title">作业二</h3>
+  <section class="section-card" id="assignment-2">
+    <h3>作业二</h3>
 
-  <p>已知哈密顿量</p>
-  <div class="aqm-equation">
-  \[
-  \hat H=\frac{1}{2m}
-  \left(\hat{\boldsymbol P}-e\boldsymbol A\right)^2+ev,
-  \]
-  </div>
-  <p>其中 \(\hat{\boldsymbol P}\) 为动量算符，\(\boldsymbol A\) 为矢势，\(v\) 为电势。</p>
+    <p>已知哈密顿量</p>
 
-  <h4>（1）电流密度</h4>
-  <p>求电流密度 \(\boldsymbol j\)。</p>
+    <div class="aqm-equation">
+      \[
+      \hat H=
+      \frac{\left(\hat{\boldsymbol P}-e\boldsymbol A\right)^2}{2m}
+      +ev.
+      \]
+    </div>
 
-  <h4>（2）极坐标表示</h4>
-  <p>若波函数写为</p>
-  <div class="aqm-equation">
-  \[
-  \psi(\boldsymbol r,t)=a(\boldsymbol r,t)e^{i\varphi(\boldsymbol r,t)},
-  \]
-  </div>
-  <p>其中 \(a\) 为实振幅，\(\varphi\) 为实相位，在极坐标中表示电流密度 \(\boldsymbol j\)。</p>
-</section>
+    <p>（1）求电流密度 \(\boldsymbol j\)。</p>
 
-<section class="section-card aqm-assignment" id="assignment-3" aria-labelledby="assignment-3-title">
-  <h3 id="assignment-3-title">作业三</h3>
+    <p>（2）若波函数写为</p>
 
-  <h4>1. 含时谐振子的平均占据数</h4>
-  <p>已知哈密顿量</p>
-  <div class="aqm-equation">
-  \[
-  \hat H(t)=\frac{\hat P^2}{2m}
-  +\frac12 m(t)\omega^2\hat x^2,
-  \]
-  </div>
-  <p>其中</p>
-  <div class="aqm-equation">
-  \[
-  m(t)=m_0+\Delta m\cos(2\omega t).
-  \]
-  </div>
-  <p>系统在 \(t=0\) 时处于 \(|0\rangle\) 态，求 \(t\) 时刻的平均占据数</p>
-  <div class="aqm-equation">
-  \[
-  \left\langle\hat a^\dagger\hat a\right\rangle_t.
-  \]
-  </div>
+    <div class="aqm-equation">
+      \[
+      \psi(\boldsymbol r,t)
+      =a(\boldsymbol r,t)e^{i\varphi(\boldsymbol r,t)},
+      \]
+    </div>
 
-  <h4>2. 相互作用绘景中算符的运动方程</h4>
-  <p>推导</p>
-  <div class="aqm-equation">
-  \[
-  \begin{aligned}
-  i\hbar\frac{d}{dt}\hat A^I(t)
-  &=\left[\hat A^I(t),\hat H_0\right]\\
-  &\quad+i\hbar
-  \left(\frac{\partial\hat A}{\partial t}\right)^I(t).
-  \end{aligned}
-  \]
-  </div>
-  <p>其中 \(\hat H_0\) 为不显含时间的未扰动哈密顿量，最后一项表示算符本身显含时间时的贡献。</p>
-</section>
+    <p>在极坐标中表示电流密度 \(\boldsymbol j\)。</p>
+  </section>
 
+  <section class="section-card" id="assignment-3">
+    <h3>作业三</h3>
+
+    <p>1. 已知哈密顿量</p>
+
+    <div class="aqm-equation">
+      \[
+      \hat H(t)=
+      \frac{\hat P^2}{2m}
+      +\frac12 m(t)\omega^2\hat x^2,
+      \]
+    </div>
+
+    <p>其中</p>
+
+    <div class="aqm-equation">
+      \[
+      m(t)=m_0+\Delta m\cos(2\omega t).
+      \]
+    </div>
+
+    <p>
+      系统在 \(t=0\) 时处于 \(|0\rangle\) 态，
+      求 \(t\) 时刻的
+      \(\left\langle\hat a^\dagger\hat a\right\rangle_t\)。
+    </p>
+
+    <p>2. 推导相互作用绘景中算符的运动方程：</p>
+
+    <div class="aqm-equation">
+      \[
+      \begin{aligned}
+      i\hbar\frac{d}{dt}\hat A^I(t)
+      &=\left[\hat A^I(t),\hat H_0\right]\\
+      &\quad+i\hbar
+      \left(\frac{\partial\hat A}{\partial t}\right)^I(t).
+      \end{aligned}
+      \]
+    </div>
+  </section>
+
+</div>
 
 
