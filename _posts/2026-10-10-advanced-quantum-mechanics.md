@@ -91,5 +91,22 @@ coursework: true
       \end{aligned}
       \]
     </div>
+
+    <h3>作业四</h3>
+    <p>1. 樱井纯《现代量子力学》第二版，第 2.3 题、第 2.7 题、第2.10题和第 2.12 题。</p>
+    <p>2. 已知自由哈密顿量</p>
+    <div class="aqm-equation">
+      \[
+      H_0 = \omega_1 | 1 \right\langle \left\langle 1 | + \omega_2 | 2 \right\langle \left\langle 2 | + \omega_3 | 3 \right\langle \left\langle 3 |,
+      \]
+    </div>
+
+    <p>微扰相互作用哈密顿量</p>
+    <div class="aqm-equation">
+      \[
+      H_I = g_1 cos(\Omega_1 t) | 1 \right\langle \left\langle 3 | + H.C. + g_2 cos(\Omega_2 t) | 2 \right\langle \left\langle 3 | + H.C.,
+      \]
+    </div>
+    <p>频率失谐条件为\Delta = \omega_3 - \omega_1 - \Omega_1 = \omega_3 - \omega_2 = \Omega_2， 量级条件为g_1, g_2 \ll \Delta \ll |\omega_3 - \omega_1|, |\omega_3 - \omega_1|, \omega_1, \omega_2，求系统的有效哈密顿量。（\hbar = 1）</p>
   </section>
 </div>
