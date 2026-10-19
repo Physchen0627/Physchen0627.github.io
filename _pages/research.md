@@ -4,10 +4,20 @@ layout: gridlay
 sitemap: false
 permalink: /research/
 ---
+<style>
+.research-content p {
+  max-width: none;
+}
 
+.research-content h3:not(:first-child) {
+  margin-top: var(--space-10);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--border-color);
+}
+</style>
 ## Research
 
-<div class="section-card">
+<div class="section-card research-content">
 
 ### Quantum Error Correction
 
