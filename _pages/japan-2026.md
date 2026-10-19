@@ -5,14 +5,17 @@ sitemap: false
 permalink: /gallery/japan-2026/
 ---
 <style>
-.japan-gallery img {
-  display: block;
+.japan-gallery p {
+  max-width: 65ch;
   margin-inline: auto;
+  text-align: center;
 }
 
-.japan-gallery p {
-  max-width: none;
-  text-align: center;
+.japan-gallery img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-inline: auto;
 }
 </style>
 
