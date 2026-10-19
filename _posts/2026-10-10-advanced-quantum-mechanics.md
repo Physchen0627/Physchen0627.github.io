@@ -245,3 +245,187 @@ coursework: true
 
   </section>
 </div>
+
+<style>
+.aqm-course {
+  display: grid;
+  grid-template-columns: 10rem minmax(0, 1fr);
+  column-gap: var(--space-6);
+  align-items: start;
+}
+
+.aqm-course > h2,
+.aqm-course > .section-card {
+  grid-column: 2;
+  min-width: 0;
+}
+
+.aqm-course .aqm-nav {
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  position: sticky;
+  top: var(--space-6);
+  max-height: calc(100vh - var(--space-6) - var(--space-6));
+  overflow-y: auto;
+  padding: var(--space-4);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+}
+
+.aqm-course .aqm-nav-title {
+  margin: 0 0 var(--space-3);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.aqm-course .aqm-nav-list {
+  display: grid;
+  gap: var(--space-1);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.aqm-course .aqm-nav-list li {
+  margin: 0;
+  padding: 0;
+}
+
+.aqm-course .aqm-nav a {
+  display: block;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-lg);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.aqm-course .aqm-nav a:hover,
+.aqm-course .aqm-nav a[aria-current="location"] {
+  background: var(--accent-light);
+  color: var(--accent);
+}
+
+.aqm-course .aqm-nav a[aria-current="location"] {
+  font-weight: 600;
+}
+
+.aqm-course .aqm-nav a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.aqm-course .aqm-assignments > h3 {
+  scroll-margin-top: var(--space-6);
+}
+
+@media (max-width: 960px) {
+  .aqm-course {
+    display: block;
+  }
+
+  .aqm-course .aqm-nav {
+    position: static;
+    max-height: none;
+    margin: var(--space-6) 0;
+  }
+
+  .aqm-course .aqm-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+}
+</style>
+
+<script>
+(() => {
+  function initAssignmentNav() {
+    const course = document.querySelector(".aqm-course");
+    if (!course || course.querySelector(".aqm-nav")) return;
+
+    const headings = Array.from(
+      course.querySelectorAll(".aqm-assignments > h3")
+    ).filter(heading =>
+      /^作业\s*[零〇一二三四五六七八九十百0-9]+$/.test(
+        heading.textContent.trim()
+      )
+    );
+
+    if (!headings.length) return;
+
+    const nav = document.createElement("nav");
+    nav.className = "aqm-nav";
+    nav.setAttribute("aria-label", "作业目录");
+    nav.innerHTML = `
+      <p class="aqm-nav-title">作业目录</p>
+      <ul class="aqm-nav-list"></ul>
+    `;
+
+    const list = nav.querySelector("ul");
+    const links = headings.map((heading, index) => {
+      if (!heading.id) heading.id = `assignment-${index + 1}`;
+
+      const item = document.createElement("li");
+      const link = document.createElement("a");
+
+      link.href = `#${encodeURIComponent(heading.id)}`;
+      link.textContent = heading.textContent.trim();
+
+      item.append(link);
+      list.append(item);
+      return link;
+    });
+
+    const title = course.querySelector(":scope > h2");
+    if (title) title.after(nav);
+    else course.prepend(nav);
+
+    function updateActive() {
+      let current = 0;
+
+      headings.forEach((heading, index) => {
+        if (heading.getBoundingClientRect().top <= 96) {
+          current = index;
+        }
+      });
+
+      links.forEach((link, index) => {
+        if (index === current) {
+          link.setAttribute("aria-current", "location");
+        } else {
+          link.removeAttribute("aria-current");
+        }
+      });
+    }
+
+    let scheduled = false;
+    function scheduleUpdate() {
+      if (scheduled) return;
+      scheduled = true;
+
+      requestAnimationFrame(() => {
+        updateActive();
+        scheduled = false;
+      });
+    }
+
+    window.addEventListener("scroll", scheduleUpdate, { passive: true });
+    window.addEventListener("resize", scheduleUpdate);
+    window.addEventListener("load", scheduleUpdate, { once: true });
+    updateActive();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initAssignmentNav, {
+      once: true
+    });
+  } else {
+    initAssignmentNav();
+  }
+})();
+</script>
