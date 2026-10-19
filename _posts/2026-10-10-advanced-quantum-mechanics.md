@@ -381,9 +381,8 @@ coursework: true
       return link;
     });
 
-    const title = course.querySelector(":scope > h2");
-    if (title) title.after(nav);
-    else course.prepend(nav);
+    const assignments = course.querySelector(".aqm-assignments");
+    if (assignments) assignments.before(nav);
 
     function updateActive() {
       let current = 0;
