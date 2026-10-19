@@ -149,5 +149,91 @@ coursework: true
     </div>
   <p>求温度为\(T\) 的单模热光场的密度矩阵，由此求出相应的平均光子数 \(\left\langle N\right\rangle = \left\langle a^\dagger a\right\rangle\)。</p>
 
+  <h3>作业六</h3>
+  <p>1. 一维情形下质量为\(m\) 的一个粒子处于形如\(V(x) = -\alpha\Delta(x)\) 的势场中，此处\(\alpha\)是一个正的常数。在这样的势场中只有能量\(E_0 = -m\alpha^2/2\hbar^2\) 为负值的一个束缚态，与此对应的归一化波函数为\(\\varphi_0(x) =  )</p>
+    <div class="aqm-equation">
+      \[
+      H =
+      \hbar \omega (a^\dagger a+\frac{1}{2}).
+      \]
+    </div>
+  <p>求温度为\(T\) 的单模热光场的密度矩阵，由此求出相应的平均光子数 \(\left\langle N\right\rangle = \left\langle a^\dagger a\right\rangle\)。</p>
+
+  <h3>作业六</h3>
+
+    <h4>光电效应的简单模型</h4>
+    <p>质量为 \(m\)、电荷为 \(q\) 的一维粒子处于势阱 \(V(x)=-\alpha\delta(x)\)，其中 \(\alpha&gt;0\)。其唯一束缚态为</p>
+    <div class="aqm-equation">
+      \[
+      E_0=-\frac{m\alpha^2}{2\hbar^2},\qquad
+      \varphi_0(x)=\sqrt{\frac{m\alpha}{\hbar^2}}
+      e^{-m\alpha|x|/\hbar^2}.
+      \]
+    </div>
+    <p>正能量 \(E=\hbar^2k^2/(2m)\)（\(k&gt;0\)）对应左右入射的两种散射态。左入射态为</p>
+    <div class="aqm-equation">
+      \[
+      \chi_k(x)=\frac{1}{\sqrt{2\pi}}
+      \begin{cases}
+      e^{ikx}-\dfrac{e^{-ikx}}{1+i\hbar^2k/(m\alpha)}, &amp; x&lt;0,\\[6pt]
+      \dfrac{i\hbar^2k/(m\alpha)}{1+i\hbar^2k/(m\alpha)}e^{ikx}, &amp; x&gt;0,
+      \end{cases}
+      \]
+    </div>
+    <p>右入射态为 \(\chi_k(-x)\)。证明 \(\langle\chi_k|\chi_{k'}\rangle=\delta(k-k')\)，并求正能量态密度 \(\rho(E)\)。可用</p>
+    <div class="aqm-equation">
+      \[
+      \int_{-\infty}^{0}e^{iqx}\,dx
+      =\int_{0}^{\infty}e^{-iqx}\,dx
+      =\pi\delta(q)-i\operatorname{PV}\frac{1}{q}.
+      \]
+    </div>
+    <p>计算位置算符的矩阵元 \(\langle\chi_k|X|\varphi_0\rangle\)。</p>
+    <p>粒子初态为 \(|\varphi_0\rangle\)，受到微扰</p>
+    <div class="aqm-equation">
+      \[
+      W(t)=-q\mathcal E X\sin\omega t,\qquad \hbar\omega&gt;-E_0.
+      \]
+    </div>
+    <p>求跃迁到正能连续谱的总跃迁率 \(w\)，并分析其对 \(\omega\) 和场强 \(\mathcal E\) 的依赖。</p>
+
+    <h4>随机微扰与自旋弛豫</h4>
+    <p>系统初态为 \(H_0\) 的本征态 \(|\varphi_i\rangle\)，受微扰 \(W(t)\) 作用。记 \(W_{fi}(t)=\langle\varphi_f|W(t)|\varphi_i\rangle\)，\(\omega_{fi}=(E_f-E_i)/\hbar\)。令 \(\mathcal P_{if}(t)\) 为跃迁到另一本征态 \(|\varphi_f\rangle\) 的概率，\(w_{if}(t)=d\mathcal P_{if}/dt\)。证明在最低非零阶微扰近似下</p>
+    <div class="aqm-equation">
+      \[
+      w_{if}(t)=\frac{1}{\hbar^2}\int_0^t
+      e^{i\omega_{fi}\tau}W_{fi}(t)W_{fi}^{*}(t-\tau)\,d\tau
+      +\mathrm{c.c.}
+      \]
+    </div>
+    <p>现考虑由大量互不作用的同种系统组成的系综，各系统受到独立的平稳随机微扰。用上横线表示系综平均，设</p>
+    <div class="aqm-equation">
+      \[
+      \overline{W_{fi}(t)}=0,\qquad
+      g_{fi}(\tau)=\overline{W_{fi}(t)W_{fi}^{*}(t-\tau)},
+      \]
+    </div>
+    <p>其中 \(g_{fi}(\tau)\) 在 \(\tau\gg\tau_c\) 时趋于零，\(\tau_c\) 为相关时间。</p>
+    <p>求平均跃迁概率 \(\overline{\mathcal P_{if}(t)}\)，并确定平均跃迁率近似不再随时间变化所需的等待时间 \(t_1\)。固定 \(\tau_c\)，分析该跃迁率对 \(\omega_{fi}\) 的依赖，并计算 \(g_{fi}(\tau)=|v_{fi}|^2e^{-\tau/\tau_c}\)（\(\tau\ge0\)）时的结果。</p>
+    <p>设微扰论仅在 \(t\ll t_2\) 时有效。如何估计 \(t_2\)？获得与时间无关的跃迁率需满足什么条件？能否推广到 \(t\gtrsim t_2\)？</p>
+
+    <p>将上述结果用于 \(\mathcal N\) 个自旋 \(1/2\)、旋磁比为 \(\gamma\) 的自由粒子。粒子处于静磁场 \(\boldsymbol B_0=B_0\hat{\boldsymbol z}\) 中，\(\omega_0=-\gamma B_0\)，封闭在半径为 \(R\) 的球形容器内。相邻两次碰壁的平均飞行时间为 \(\tau_v\)，碰壁持续时间为 \(\tau_a\ll\tau_v\)。飞行时仅受 \(\boldsymbol B_0\) 作用；碰壁时还受方向随机、均方根幅度为 \(b_0\) 的表面磁场 \(\boldsymbol b(t)\) 作用。</p>
+    <p>各分量的自相关函数均为</p>
+    <div class="aqm-equation">
+      \[
+      \overline{b_\mu(t)b_\mu(t-\tau)}
+      =\frac{b_0^2}{3}\frac{\tau_a}{\tau_v}e^{-\tau/\tau_a},
+      \qquad \mu=x,y,z,\quad \tau\ge0,
+      \]
+    </div>
+    <p>不同分量的交叉相关为零。说明该相关函数的物理依据。</p>
+    <p>若粒子沿 \(z\) 方向具有微小的宏观磁化强度 \(\mathcal M_z\)，证明</p>
+    <div class="aqm-equation">
+      \[
+      \frac{d\mathcal M_z}{dt}=-\frac{\mathcal M_z}{T_1},
+      \]
+    </div>
+    <p>并用 \(\gamma,B_0,\tau_a,\tau_v,b_0\) 表示纵向弛豫时间 \(T_1\)。说明如何通过 \(T_1\) 随 \(B_0\) 的变化测定 \(\tau_a\)，以及如何利用不同半径、相同材料容器中的 \(T_1\) 测量结果确定 \(b_0\)。</p>
+
   </section>
 </div>
