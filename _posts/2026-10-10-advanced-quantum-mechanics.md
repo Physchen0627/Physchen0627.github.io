@@ -138,5 +138,16 @@ coursework: true
 
 <p>求系统的有效哈密顿量。（\(\hbar=1\)）</p>
 
+<h3>作业五</h3>
+    <p>1. 樱井纯《现代量子力学》第二版，第 3.10 题、3.11 题、3.12题。</p>
+    <p>2. 单模热光场</p>
+    <div class="aqm-equation">
+      \[
+      H =
+      \hbar \omega (\(a^\dagger a+\frac{1}{2}\)).
+      \]
+    </div>
+    <p>求温度为\(T\) 的单模热光场的密度矩阵,由此求出相应的平均光子数\(\left\langle N\right\rangle = \left\langle a^\dagger a\right\rangle_t\)。</p>
+
   </section>
 </div>
