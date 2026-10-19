@@ -147,7 +147,7 @@ coursework: true
       \hbar \omega (a^\dagger a+\frac{1}{2}).
       \]
     </div>
-    <p>求温度为\(T\) 的单模热光场的密度矩阵,由此求出相应的平均光子数 \(\left\langle N\right\rangle = \left\langle a^\dagger a\right\rangle\)。</p>
+    <p>求温度为\(T\) 的单模热光场的密度矩阵, 由此求出相应的平均光子数 \(\left\langle N\right\rangle = \left\langle a^\dagger a\right\rangle\)。</p>
 
   </section>
 </div>
