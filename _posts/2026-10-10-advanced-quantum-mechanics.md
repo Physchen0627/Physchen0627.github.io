@@ -10,6 +10,9 @@ coursework: true
 .aqm-course .aqm-updated { font-size: 0.875rem; margin-bottom: 0; }
 .aqm-course .aqm-equation { max-width: 100%; overflow-x: auto; padding: 0.25rem 0; }
 .aqm-course .aqm-equation mjx-container[display="true"] { margin: 1rem 0 !important; }
+.aqm-course .aqm-assignments p {
+  max-width: none;
+}
 
 .aqm-course .aqm-assignments > h3 ~ h3 {
   border-top: 1px solid var(--border-color);
