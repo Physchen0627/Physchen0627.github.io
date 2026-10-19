@@ -4,10 +4,21 @@ layout: gridlay
 sitemap: false
 permalink: /gallery/japan-2026/
 ---
+<style>
+.japan-gallery img {
+  display: block;
+  margin-inline: auto;
+}
+
+.japan-gallery p {
+  max-width: none;
+  text-align: center;
+}
+</style>
 
 ## Japan, Summer 2026
 
-<div class="section-card">
+<div class="section-card japan-gallery">
 
 ### Osaka
 
