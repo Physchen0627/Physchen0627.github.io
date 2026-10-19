@@ -150,16 +150,6 @@ coursework: true
   <p>求温度为\(T\) 的单模热光场的密度矩阵，由此求出相应的平均光子数 \(\left\langle N\right\rangle = \left\langle a^\dagger a\right\rangle\)。</p>
 
   <h3>作业六</h3>
-  <p>1. 一维情形下质量为\(m\) 的一个粒子处于形如\(V(x) = -\alpha\Delta(x)\) 的势场中，此处\(\alpha\)是一个正的常数。在这样的势场中只有能量\(E_0 = -m\alpha^2/2\hbar^2\) 为负值的一个束缚态，与此对应的归一化波函数为\(\\varphi_0(x) =  )</p>
-    <div class="aqm-equation">
-      \[
-      H =
-      \hbar \omega (a^\dagger a+\frac{1}{2}).
-      \]
-    </div>
-  <p>求温度为\(T\) 的单模热光场的密度矩阵，由此求出相应的平均光子数 \(\left\langle N\right\rangle = \left\langle a^\dagger a\right\rangle\)。</p>
-
-  <h3>作业七</h3>
 
     <p>1. 质量为 \(m\)、电荷为 \(q\) 的一维粒子处于势阱 \(V(x)=-\alpha\delta(x)\)，其中 \(\alpha&gt;0\)。其唯一束缚态为</p>
     <div class="aqm-equation">
