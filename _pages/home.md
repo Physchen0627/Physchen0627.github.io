@@ -27,3 +27,5 @@ And, of course, I remain curious about the physical world in all its forms.
 - Google Scholar: 
 - GitHub: [https://github.com/Physchen0627](https://github.com/Physchen0627)
 - ORCID: [https://orcid.org/0009-0001-6170-5800](https://orcid.org/0009-0001-6170-5800)
+- Zhihu: [https://www.zhihu.com/people/lu-bang-san-shi-7](https://www.zhihu.com/people/lu-bang-san-shi-7)
+- Bangumi: [https://bangumi.tv/user/barnett](https://bangumi.tv/user/barnett)
