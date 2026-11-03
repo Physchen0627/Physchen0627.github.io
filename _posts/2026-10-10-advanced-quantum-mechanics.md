@@ -256,7 +256,7 @@ coursework: true
   <p>系统与热库线性耦合：</p>
     <div class="aqm-equation">
       \[
-      H_{SB} = A_x F, \qquad F = \sum_{k}B_k X_k
+      H_{SB} = AXF, \qquad F = \sum_{k}B_k X_k, \qquad X= X_{zpf}(a + a^\dagger)
       \]
     </div>
   <p>A 为耦合常数， F 为热库常数。热库算符的非对称量子噪声谱密度定义为：</p>
@@ -265,17 +265,16 @@ coursework: true
       S_{FF}[\Omega]= \int_{-\infty}^{+\infty}dt \cdot e^{i\Omega t} \left\langle F(t)F(0)\right\rangle_B
       \].
       </div>
-
       <div class="aqm-equation">
       \[
-      \bar{S_{FF}[\Omega]} = \frac{1}{2}(S_{FF}[\Omega]+S_{FF}[-\Omega])
+      \overline{S_{FF}[\Omega]} = \frac{1}{2}(S_{FF}[\Omega]+S_{FF}[-\Omega])
       \].
     </div>
   
   <p>（1）证明：</p>
     <div class="aqm-equation">
       \[
-      \frac{\mathrm{d} \left\lange E\right\lange}{\mathrm{d} x} = P - \Gamma \left\lange E\right\lange
+      \frac{\mathrm{d} }{\mathrm{d} x}\left\lange E\right\lange = P - \Gamma \left\lange E\right\lange
       \]
     </div>
     <p>其中：</p>
@@ -288,10 +287,10 @@ coursework: true
   <p>（2）利用KMS关系，证明量子涨落-耗散关系：</p>
     <div class="aqm-equation">
       \[
-      \bar{S_{FF}[\omega]} = \coth (\frac{\beta \hbar \omega}{2}) \frac{\hbar \omega m}{A^2}
+      \overline{S_{FF}[\omega]} = \coth (\frac{\beta \hbar \omega}{2}) \frac{\hbar \omega m}{A^2}
       \]
     </div>
-  <p>其中\(\beta = \frac{1}{k_B T}\)在高温极限\(k_B T \gg \hbar\omega\)下，退化为经典情况：\(A^2 \bar{S_{FF}[\omega]} = 2k_B Tm \Gamma\)。</p>
+  <p>其中 \(\beta = \frac{1}{k_B T}\)在高温极限 \(k_B T \gg \hbar\omega\)下，退化为经典情况：\(A^2 \overline{S_{FF}[\omega]} = 2k_B Tm \Gamma\)。</p>
 
 
   
