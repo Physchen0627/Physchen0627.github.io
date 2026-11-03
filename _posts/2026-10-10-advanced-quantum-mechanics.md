@@ -256,7 +256,7 @@ coursework: true
   <p>系统与热库线性耦合：</p>
     <div class="aqm-equation">
       \[
-      H_{SB} = AXF, \qquad F = \sum_{k}B_k X_k, \qquad X= X_{zpf}(a + a^\dagger)
+      H_{SB} = AxF, \qquad F = \sum_{k}B_k X_k, \qquad x= x_{zpf}(a + a^\dagger)
       \]
     </div>
   <p>A 为耦合常数， F 为热库常数。热库算符的非对称量子噪声谱密度定义为：</p>
