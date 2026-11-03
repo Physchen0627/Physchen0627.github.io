@@ -253,7 +253,7 @@ coursework: true
       \qquad x= x_{zpf}(a + a^\dagger),\qquad x_{zpf} = \sqrt{\frac{\hbar}{2m\omega}}
       \]
     </div>
-  </p>同时存在热库：</p>
+  <p> 同时存在热库：</p>
     <div class="aqm-equation">
       \[
       H_B= \sum_{k}(\frac{p_k^2}{2m_k}+\frac{1}{2}m_k \omega_k^2 x_k^2),\qquad
@@ -265,7 +265,7 @@ coursework: true
       H_{SB} = AxF, \qquad F = \sum_{k}B_k x_k,
       \]
     </div>
-  <p>A 为耦合常数， F 为热库常数。热库算符的非对称量子噪声谱密度定义为：</p>
+  <p>A 为耦合常数， F 为热库算符。热库算符的非对称量子噪声谱密度定义为：</p>
       <div class="aqm-equation">
       \[
       S_{FF}[\Omega]= \int_{-\infty}^{+\infty}dt \cdot e^{i\Omega t} \left\langle F(t)F(0)\right\rangle_B, \qquad \overline{S_{FF}[\Omega]} = \frac{1}{2}(S_{FF}[\Omega]+S_{FF}[-\Omega])
@@ -273,11 +273,7 @@ coursework: true
       </div>
   
   <p>（1）证明：</p>
-    <div class="aqm-equation">
-      \[
-      \frac{d}{dx} \left\lange E\right\lange = P - \Gamma \left\lange E\right\lange
-      \]
-    </div>
+
     <p>其中：</p>
     <div class="aqm-equation">
       \[
@@ -291,7 +287,7 @@ coursework: true
       \overline{S_{FF}[\omega]} = \coth (\frac{\beta \hbar \omega}{2}) \frac{\hbar \omega m}{A^2}
       \]
     </div>
-  <p>其中 \(\beta = \frac{1}{k_B T}\) 在高温极限 （\(k_B T \gg \hbar\omega\)）下，退化为经典情况：</p>
+  <p>或者证明 \(\beta = \frac{1}{k_B T}\) 在高温极限 （\(k_B T \gg \hbar\omega\)）下，退化为经典情况：</p>
     <div class="aqm-equation">
       \[
       A^2 \overline{S_{FF}[\omega]} = 2k_B Tm \Gamma.
