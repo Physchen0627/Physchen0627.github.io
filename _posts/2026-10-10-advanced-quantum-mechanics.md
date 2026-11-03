@@ -86,12 +86,7 @@ coursework: true
   <p>2. 推导相互作用绘景中算符的运动方程：</p>
     <div class="aqm-equation">
       \[
-      \begin{aligned}
-      i\hbar\frac{d}{dt}\hat A^I(t)
-      &=\left[\hat A^I(t),\hat H_0\right]\\
-      &\quad+i\hbar
-      \left(\frac{\partial\hat A}{\partial t}\right)^I(t).
-      \end{aligned}
+      i\hbar\frac{d}{dt}\hat A^I(t) = \left[\hat A^I(t),\hat H_0\right] + i\hbar\left(\frac{\partial\hat A}{\partial t}\right)^I(t).
       \]
     </div>
 
