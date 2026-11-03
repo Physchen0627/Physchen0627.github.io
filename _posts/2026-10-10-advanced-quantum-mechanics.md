@@ -256,13 +256,20 @@ coursework: true
   <p>系统与热库线性耦合：</p>
     <div class="aqm-equation">
       \[
-      H_SB = A_x F, \qquad F = \sum_{k}B_k X_k
+      H_{SB} = A_x F, \qquad F = \sum_{k}B_k X_k
       \]
     </div>
   <p>A 为耦合常数， F 为热库常数。热库算符的非对称量子噪声谱密度定义为：</p>
       <div class="aqm-equation">
       \[
-      S_{FF}[\Omega]= \int_{-\infty}^{+\infty}dt \cdot e^i\Omega t \left\langle F(t)F(0)\right\rangle_B
+      S_{FF}[\Omega]= \int_{-\infty}^{+\infty}dt \cdot e^{i\Omega t} \left\langle F(t)F(0)\right\rangle_B
+      \].
+      </div>
+
+      <div class="aqm-equation">
+      \[
+      \bar{S_{FF}[\Omega]} = \frac{1}{2}(S_{FF}[\Omega]+S_{FF}[-\Omega])
+      S_{FF}[\Omega]= \int_{-\infty}^{+\infty}dt \cdot e^{i\Omega t} \left\langle F(t)F(0)\right\rangle_B
       \].
     </div>
   
