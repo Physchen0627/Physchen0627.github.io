@@ -269,7 +269,7 @@ coursework: true
   <p>（1）证明：</p>
     <div class="aqm-equation">
       \[
-      \frac{\mathrm{d} }{\mathrm{d} x} = P - \Gamma \left\lange E\right\lange
+      \frac{d}{dx} \left\lange E\right\lange = P - \Gamma \left\lange E\right\lange
       \]
     </div>
     <p>其中：</p>
