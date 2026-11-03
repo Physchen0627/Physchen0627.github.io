@@ -270,7 +270,7 @@ coursework: true
   <p>（1）证明：</p>
       <div class="aqm-equation">
       \[
-      \frac{d}{dt} \left\langle E \right\langle = P - \Gamma \left\langle E \right\langle
+      \frac{d}{dt} \left\langle E \right\rangle = P - \Gamma \left\langle E \right\rangle
       \]
     </div>
 
