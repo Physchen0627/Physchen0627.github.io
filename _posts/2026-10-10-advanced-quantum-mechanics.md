@@ -247,7 +247,13 @@ coursework: true
   <p>（7）说明如何通过 \(T_1\) 随 \(B_0\) 的变化测定 \(\tau_a\)。</p>
 
   <p>（8）说明如何利用不同半径、相同材料容器中的 \(T_1\) 测量结果确定 \(b_0\)。</p>
-  <p>2. 中心系统，坐标算符写为零点涨落，微观谐振子浴，温度为 \(T\) 的热本征态：</p>
+  <p>2. 系统哈密顿量为：\(H_s = \frac{p^2}{2m} + \frac{1}{2}m\omega^2x^2\)，坐标算符写为零点涨落,</p>
+    <div class="aqm-equation">
+      \[
+      \qquad x= x_{zpf}(a + a^\dagger),\qquad x_{zpf} = \sqrt{\frac{\hbar}{2m\omega}}
+      \]
+    </div>
+  </p>同时存在热库：</p>
     <div class="aqm-equation">
       \[
       H_B= \sum_{k}(\frac{p_k^2}{2m_k}+\frac{1}{2}m_k \omega_k^2 x_k^2),\qquad
@@ -256,7 +262,7 @@ coursework: true
   <p>系统与热库线性耦合：</p>
     <div class="aqm-equation">
       \[
-      H_{SB} = AxF, \qquad F = \sum_{k}B_k X_k, \qquad x= x_{zpf}(a + a^\dagger)
+      H_{SB} = AxF, \qquad F = \sum_{k}B_k x_k,
       \]
     </div>
   <p>A 为耦合常数， F 为热库常数。热库算符的非对称量子噪声谱密度定义为：</p>
@@ -275,7 +281,7 @@ coursework: true
     <p>其中：</p>
     <div class="aqm-equation">
       \[
-      P = \frac{A^2}{2m}\overline{S_{FF}[\omega]}, \qquad \Gamma = \frac{1}{\hbar^2}A^2 X^2_{zpf}(S_{FF}[\omega] - S_{FF}[-\omega])
+      P = \frac{A^2}{2m}\overline{S_{FF}[\omega]}, \qquad \Gamma = \frac{1}{\hbar^2}A^2 x^2_{zpf}(S_{FF}[\omega] - S_{FF}[-\omega])
       \]
     </div>
 
