@@ -247,10 +247,10 @@ coursework: true
   <p>（7）说明如何通过 \(T_1\) 随 \(B_0\) 的变化测定 \(\tau_a\)。</p>
 
   <p>（8）说明如何利用不同半径、相同材料容器中的 \(T_1\) 测量结果确定 \(b_0\)。</p>
-  <p>2. 系统哈密顿量为：\(H_s = \frac{p^2}{2m} + \frac{1}{2}m\omega^2x^2\)，坐标算符写为零点涨落,</p>
+  <p>2. 系统哈密顿量为：\(H_s = \frac{p^2}{2m} + \frac{1}{2}m\omega^2x^2\)，坐标算符写为零点涨落:</p>
     <div class="aqm-equation">
       \[
-      \qquad x= x_{zpf}(a + a^\dagger),\qquad x_{zpf} = \sqrt{\frac{\hbar}{2m\omega}}
+      x= x_{zpf}(a + a^\dagger),\qquad x_{zpf} = \sqrt{\frac{\hbar}{2m\omega}}
       \]
     </div>
   <p> 同时存在热库：</p>
@@ -273,6 +273,11 @@ coursework: true
       </div>
   
   <p>（1）证明：</p>
+      <div class="aqm-equation">
+      \[
+      \frac{d}{dt} \left\langle E \right\langle = P - \Gamma \left\langle E \right\langle
+      \]
+    </div>
 
     <p>其中：</p>
     <div class="aqm-equation">
