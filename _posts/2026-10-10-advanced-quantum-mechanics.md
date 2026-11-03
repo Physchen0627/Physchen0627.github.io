@@ -247,6 +247,44 @@ coursework: true
   <p>（7）说明如何通过 \(T_1\) 随 \(B_0\) 的变化测定 \(\tau_a\)。</p>
 
   <p>（8）说明如何利用不同半径、相同材料容器中的 \(T_1\) 测量结果确定 \(b_0\)。</p>
+  <p>2. 中心系统，坐标算符写为零点涨落，微观谐振子浴，温度为 \(T\) 的热本征态：</p>
+    <div class="aqm-equation">
+      \[
+      H_B= \sum_{k}(\frac{p_k^2}{2m_k}+\frac{1}{2}m_k \omega_k^2 x_k^2),\qquad
+      \]
+    </div>
+  <p>系统与热库线性耦合：</p>
+    <div class="aqm-equation">
+      \[
+      H_SB = A_x F, \qquad F = \sum_{k}B_k X_k
+      \]
+    </div>
+  <p>A 为耦合常数， F 为热库常数。热库算符的非对称量子噪声谱密度定义为：</p>
+      <div class="aqm-equation">
+      \[
+      S_{FF}[\Omega]= \int_{-\infty}^{+\infty}dt \cdot e^i\Omega t \left\langle F(t)F(0)\right\rangle_B
+      \].
+    </div>
+  
+  <p>（1）证明 \(\langle\chi_k|\chi_{k'}\rangle=\delta(k-k')\)，并求正能量态密度 \(\rho(E)\)。可用</p>
+    <div class="aqm-equation">
+      \[
+      \int_{-\infty}^{0}e^{iqx}\,dx
+      =\int_{0}^{\infty}e^{-iqx}\,dx
+      =\pi\delta(q)-i\operatorname{PV}\frac{1}{q}.
+      \]
+    </div>
+
+  <p>（2）计算位置算符的矩阵元 \(\langle\chi_k|X|\varphi_0\rangle\)。</p>
+
+  <p>（3）粒子初态为 \(|\varphi_0\rangle\)，受到微扰</p>
+    <div class="aqm-equation">
+      \[
+      W(t)=-q\mathcal E X\sin\omega t,\qquad
+      \hbar\omega&gt;-E_0.
+      \]
+    </div>
+  <p>求跃迁到正能连续谱的总跃迁率 \(w\)，并分析其对 \(\omega\) 和场强 \(\mathcal E\) 的依赖。</p>
 
 
   
