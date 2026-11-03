@@ -269,29 +269,29 @@ coursework: true
       <div class="aqm-equation">
       \[
       \bar{S_{FF}[\Omega]} = \frac{1}{2}(S_{FF}[\Omega]+S_{FF}[-\Omega])
-      S_{FF}[\Omega]= \int_{-\infty}^{+\infty}dt \cdot e^{i\Omega t} \left\langle F(t)F(0)\right\rangle_B
       \].
     </div>
   
-  <p>（1）证明 \(\langle\chi_k|\chi_{k'}\rangle=\delta(k-k')\)，并求正能量态密度 \(\rho(E)\)。可用</p>
+  <p>（1）证明：</p>
     <div class="aqm-equation">
       \[
-      \int_{-\infty}^{0}e^{iqx}\,dx
-      =\int_{0}^{\infty}e^{-iqx}\,dx
-      =\pi\delta(q)-i\operatorname{PV}\frac{1}{q}.
+      \frac{\mathrm{d} \left\lange E\right\lange}{\mathrm{d} x} = P - \Gamma \left\lange E\right\lange
+      \]
+    </div>
+    <p>其中：</p>
+    <div class="aqm-equation">
+      \[
+      P = \frac{A^2}{2m}\bar{S_{FF}[\omega]}, \qquad \Gamma = \frac{1}{\hbar^2}A^2 X^2_{zpf}(S_{FF}[\omega] - S_{FF}[-\omega])
       \]
     </div>
 
-  <p>（2）计算位置算符的矩阵元 \(\langle\chi_k|X|\varphi_0\rangle\)。</p>
-
-  <p>（3）粒子初态为 \(|\varphi_0\rangle\)，受到微扰</p>
+  <p>（2）利用KMS关系，证明量子涨落-耗散关系：</p>
     <div class="aqm-equation">
       \[
-      W(t)=-q\mathcal E X\sin\omega t,\qquad
-      \hbar\omega&gt;-E_0.
+      \bar{S_{FF}[\omega]} = \coth (\frac{\beta \hbar \omega}{2}) \frac{\hbar \omega m}{A^2}
       \]
     </div>
-  <p>求跃迁到正能连续谱的总跃迁率 \(w\)，并分析其对 \(\omega\) 和场强 \(\mathcal E\) 的依赖。</p>
+  <p>其中\(\beta = \frac{1}{k_B T}\)在高温极限\(k_B T \gg \hbar\omega\)下，退化为经典情况：\(A^2 \bar{S_{FF}[\omega]} = 2k_B Tm \Gamma\)。</p>
 
 
   
