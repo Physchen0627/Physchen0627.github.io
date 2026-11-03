@@ -262,25 +262,20 @@ coursework: true
   <p>A 为耦合常数， F 为热库常数。热库算符的非对称量子噪声谱密度定义为：</p>
       <div class="aqm-equation">
       \[
-      S_{FF}[\Omega]= \int_{-\infty}^{+\infty}dt \cdot e^{i\Omega t} \left\langle F(t)F(0)\right\rangle_B
+      S_{FF}[\Omega]= \int_{-\infty}^{+\infty}dt \cdot e^{i\Omega t} \left\langle F(t)F(0)\right\rangle_B, \qquad \overline{S_{FF}[\Omega]} = \frac{1}{2}(S_{FF}[\Omega]+S_{FF}[-\Omega])
       \].
       </div>
-      <div class="aqm-equation">
-      \[
-      \overline{S_{FF}[\Omega]} = \frac{1}{2}(S_{FF}[\Omega]+S_{FF}[-\Omega])
-      \].
-    </div>
   
   <p>（1）证明：</p>
     <div class="aqm-equation">
       \[
-      \frac{\mathrm{d} }{\mathrm{d} x}\left\lange E\right\lange = P - \Gamma \left\lange E\right\lange
+      \frac{\mathrm{d} }{\mathrm{d} x} = P - \Gamma \left\lange E\right\lange
       \]
     </div>
     <p>其中：</p>
     <div class="aqm-equation">
       \[
-      P = \frac{A^2}{2m}\bar{S_{FF}[\omega]}, \qquad \Gamma = \frac{1}{\hbar^2}A^2 X^2_{zpf}(S_{FF}[\omega] - S_{FF}[-\omega])
+      P = \frac{A^2}{2m}\overline{S_{FF}[\omega]}, \qquad \Gamma = \frac{1}{\hbar^2}A^2 X^2_{zpf}(S_{FF}[\omega] - S_{FF}[-\omega])
       \]
     </div>
 
@@ -290,8 +285,12 @@ coursework: true
       \overline{S_{FF}[\omega]} = \coth (\frac{\beta \hbar \omega}{2}) \frac{\hbar \omega m}{A^2}
       \]
     </div>
-  <p>其中 \(\beta = \frac{1}{k_B T}\)在高温极限 \(k_B T \gg \hbar\omega\)下，退化为经典情况：\(A^2 \overline{S_{FF}[\omega]} = 2k_B Tm \Gamma\)。</p>
-
+  <p>其中 \(\beta = \frac{1}{k_B T}\)在高温极限 \(k_B T \gg \hbar\omega\)下，退化为经典情况：</p>
+    <div class="aqm-equation">
+      \[
+      \(A^2 \overline{S_{FF}[\omega]} = 2k_B Tm \Gamma\).
+      \]
+    </div>
 
   
   </section>
