@@ -105,13 +105,7 @@ coursework: true
 <p>微扰相互作用哈密顿量为</p>
 <div class="aqm-equation">
   \[
-  \begin{aligned}
-  H_I(t)
-  &= g_1 \cos(\Omega_1 t)|1\rangle\langle 3|
-     + \mathrm{H.c.}\\
-  &\quad + g_2 \cos(\Omega_2 t)|2\rangle\langle 3|
-     + \mathrm{H.c.}
-  \end{aligned}
+  H_I(t) = g_1 \cos(\Omega_1 t)|1\rangle\langle 3| + \mathrm{H.c.} + g_2 \cos(\Omega_2 t)|2\rangle\langle 3| + \mathrm{H.c.}
   \]
 </div>
 
