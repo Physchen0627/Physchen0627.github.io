@@ -285,10 +285,10 @@ coursework: true
       \overline{S_{FF}[\omega]} = \coth (\frac{\beta \hbar \omega}{2}) \frac{\hbar \omega m}{A^2}
       \]
     </div>
-  <p>其中 \(\beta = \frac{1}{k_B T}\)在高温极限 \(k_B T \gg \hbar\omega\)下，退化为经典情况：</p>
+  <p>其中 \(\beta = \frac{1}{k_B T}\) 在高温极限 （\(k_B T \gg \hbar\omega\)）下，退化为经典情况：</p>
     <div class="aqm-equation">
       \[
-      \(A^2 \overline{S_{FF}[\omega]} = 2k_B Tm \Gamma\).
+      A^2 \overline{S_{FF}[\omega]} = 2k_B Tm \Gamma.
       \]
     </div>
 
