@@ -257,14 +257,14 @@ coursework: true
   <p>A 为耦合常数， F 为热库算符。热库算符的非对称量子噪声谱密度定义为：</p>
       <div class="aqm-equation">
       \[
-      S_{FF}[\Omega]= \int_{-\infty}^{+\infty}dt \cdot e^{i\Omega t} \left\langle F(t)F(0)\right\rangle_B, \qquad \overline{S_{FF}[\Omega]} = \frac{1}{2}(S_{FF}[\Omega]+S_{FF}[-\Omega])
-      \].
+      S_{FF}[\Omega]= \int_{-\infty}^{+\infty}dt \cdot e^{i\Omega t} \left\langle F(t)F(0)\right\rangle_B, \qquad \overline{S_{FF}[\Omega]} = \frac{1}{2}(S_{FF}[\Omega]+S_{FF}[-\Omega]).
+      \]
       </div>
   
   <p>（1）证明：</p>
       <div class="aqm-equation">
       \[
-      \frac{d}{dt} \left\langle E \right\rangle = P - \Gamma \left\langle E \right\rangle
+      \frac{d}{dt} \left\langle E \right\rangle = P - \Gamma \left\langle E \right\rangle,
       \]
     </div>
 
