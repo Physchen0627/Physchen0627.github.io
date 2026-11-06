@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Advanced Quantum Mechanics, Autumn 2026</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="2026-10-10-advanced-quantum-mechanics_files/libs/clipboard/clipboard.min.js"></script>
+<script src="2026-10-10-advanced-quantum-mechanics_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="2026-10-10-advanced-quantum-mechanics_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="2026-10-10-advanced-quantum-mechanics_files/libs/quarto-html/popper.min.js"></script>
+<script src="2026-10-10-advanced-quantum-mechanics_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="2026-10-10-advanced-quantum-mechanics_files/libs/quarto-html/anchor.min.js"></script>
+<link href="2026-10-10-advanced-quantum-mechanics_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="2026-10-10-advanced-quantum-mechanics_files/libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="2026-10-10-advanced-quantum-mechanics_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="2026-10-10-advanced-quantum-mechanics_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="2026-10-10-advanced-quantum-mechanics_files/libs/bootstrap/bootstrap-215b371544c282197b31c8aa00ce3677.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Advanced Quantum Mechanics, Autumn 2026</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<style>
+.aqm-course > h2 { margin-top: 0; }
+.aqm-course .aqm-updated { font-size: 0.875rem; margin-bottom: 0; }
+.aqm-course .aqm-equation { max-width: 100%; overflow-x: auto; padding: 0.25rem 0; }
+.aqm-course .aqm-equation mjx-container[display="true"] { margin: 1rem 0 !important; }
+.aqm-course .aqm-assignments p {
+  max-width: none;
+}
+
+.aqm-course .aqm-assignments > h3 ~ h3 {
+  border-top: 1px solid var(--border-color);
+  margin-top: var(--space-8);
+  padding-top: var(--space-8);
+}
+
+@media (max-width: 600px) {
+  .aqm-course .section-card { padding: var(--space-6); }
+  .aqm-course .aqm-equation { font-size: 0.9rem; }
+}
+</style>
+<div class="aqm-course" lang="zh-CN" data-markdown="0">
+<h2 class="anchored">
+{{ page.title | escape }}
+</h2>
+<section class="section-card">
+<h3 class="anchored">
+2026 年秋季高等量子力学作业汇总
+</h3>
+<p>
+助教办公室：逸夫科技楼南411
+</p>
+<p>
+已更新作业次数：{{ page.assignment_count }}
+</p>
+<p>
+每周一上课前需交作业
+</p>
+<p>
+<strong style="color: #d32f2f;">仅作参考，一切请以老师上课布置为准！</strong>
+</p>
+<p class="text-muted aqm-updated">
+最近更新日期：<time datetime="{{ page.last_updated }}">{{ page.last_updated }}</time>
+</p>
+</section>
+<section class="section-card aqm-assignments">
+<h3 class="anchored">
+作业一
+</h3>
+<p>
+</p><ol type="1">
+<li>推导球坐标下的 (L_x) 和 (L_y) 算符。
+<p></p>
+<p>
+</p><ol start="2" type="1">
+<li>樱井纯《现代量子力学》第二版，第 1.30 和 1.31 题。
+<p></p></li>
+</ol></li>
+</ol>
+<h3 class="anchored">
+作业二
+</h3>
+<p>
+已知哈密顿量
+</p>
+<pre><code>&lt;div class="aqm-equation"&gt;
+  \[
+  \hat H=\frac{\left(\hat{\boldsymbol P}-e\boldsymbol A\right)^2}{2m}+ev.
+  \]
+&lt;/div&gt;</code></pre>
+<p>
+（1）求电流密度 (j)。
+</p>
+<p>
+（2）若波函数写为
+</p>
+<pre><code>&lt;div class="aqm-equation"&gt;
+  \[
+  \psi(\boldsymbol r,t)=a(\boldsymbol r,t)e^{i\varphi(\boldsymbol r,t)},
+  \]
+&lt;/div&gt;</code></pre>
+<p>
+在极坐标中表示电流密度 (j)。
+</p>
+<h3 class="anchored">
+作业三
+</h3>
+<p>
+</p><ol type="1">
+<li>已知哈密顿量
+<p></p>
+<div class="aqm-equation">
+[ H(t)=+ m(t)^2x^2, ]
+</div></li>
+</ol>
+<p>
+其中
+</p>
+<pre><code>&lt;div class="aqm-equation"&gt;
+  \[
+  m(t)=m_0+\Delta m\cos(2\omega t).
+  \]
+&lt;/div&gt;</code></pre>
+<p>
+系统在 (t=0) 时处于 (|0) 态， 求 (t) 时刻的 (a^a_t)。
+</p>
+<p>
+</p><ol start="2" type="1">
+<li>推导相互作用绘景中算符的运动方程：
+<p></p>
+<div class="aqm-equation">
+[ iA^I(t) = + i()^I(t). ]
+</div></li>
+</ol>
+<h3 class="anchored">
+作业四
+</h3>
+<p>
+</p><ol type="1">
+<li>樱井纯《现代量子力学》第二版，第 2.3 题、2.7 题、2.10题、2.12 题。
+<p></p>
+<p>
+</p><ol start="2" type="1">
+<li>已知自由哈密顿量
+<p></p>
+<div class="aqm-equation">
+[ H_0 = _1 |1|
+</div></li>
+</ol></li>
+</ol>
+<ul>
+<li>_2 |2|</li>
+<li>_3 |3|. ]
+</li></ul></section></div>
+
+<p>
+微扰相互作用哈密顿量为
+</p>
+<div class="aqm-equation">
+<p>[ H_I(t) = g_1 (_1 t)|1| + + g_2 (_2 t)|2| + ]</p>
+</div>
+<p>
+频率失谐条件为
+</p>
+<div class="aqm-equation">
+<p>[ = _3 - _1 - _1 = _3 - _2 - _2. ]</p>
+</div>
+<p>
+量级条件为
+</p>
+<div class="aqm-equation">
+<p>[ g_1,,g_2 |_3-_1|,, |_3-_2|,, _1,,_2. ]</p>
+</div>
+<p>
+求系统的有效哈密顿量。（()）
+</p>
+<h3 class="anchored">
+作业五
+</h3>
+<p>
+</p><ol type="1">
+<li>樱井纯《现代量子力学》第二版，第 3.10 题、3.11 题、3.12题。
+<p></p>
+<p>
+</p><ol start="2" type="1">
+<li>单模热光场
+<p></p>
+<div class="aqm-equation">
+[ H = (a^a+). ]
+</div>
+<p>
+求温度为(T) 的单模热光场的密度矩阵，由此求出相应的平均光子数 (N= a^a)。
+</p></li>
+</ol></li>
+</ol>
+<h3 class="anchored">
+作业六
+</h3>
+<p>
+</p><ol type="1">
+<li>质量为 (m)、电荷为 (q) 的一维粒子处于势阱 (V(x)=-(x))，其中 (&gt;0)。其唯一束缚态为
+<p></p>
+<div class="aqm-equation">
+[ E_0=-, _0(x)= e<sup>{-m|x|/</sup>2}. ]
+</div>
+<p>
+正能量 (E=<sup>2k</sup>2/(2m))（(k&gt;0)）对应左右入射的两种散射态。左入射态为
+</p>
+<div class="aqm-equation">
+[ _k(x)=
+<span class="math display">\[\begin{cases}
+   e^{ikx}-\dfrac{e^{-ikx}}{1+i\hbar^2k/(m\alpha)},
+   &amp;amp; x&amp;lt;0,\\[6pt]
+   \dfrac{i\hbar^2k/(m\alpha)}{1+i\hbar^2k/(m\alpha)}e^{ikx},
+   &amp;amp; x&amp;gt;0.
+   \end{cases}\]</span>
+]
+</div>
+<p>
+右入射态为 (_k(-x))。
+</p></li>
+</ol>
+<p>
+（1）证明 (<em>k|</em>{k’}=(k-k’))，并求正能量态密度 ((E))。可用
+</p>
+<pre><code>&lt;div class="aqm-equation"&gt;
+  \[
+  \int_{-\infty}^{0}e^{iqx}\,dx
+  =\int_{0}^{\infty}e^{-iqx}\,dx
+  =\pi\delta(q)-i\operatorname{PV}\frac{1}{q}.
+  \]
+&lt;/div&gt;</code></pre>
+<p>
+（2）计算位置算符的矩阵元 (_k|X|_0)。
+</p>
+<p>
+（3）粒子初态为 (|_0)，受到微扰
+</p>
+<pre><code>&lt;div class="aqm-equation"&gt;
+  \[
+  W(t)=-q\mathcal E X\sin\omega t,\qquad
+  \hbar\omega&amp;gt;-E_0.
+  \]
+&lt;/div&gt;</code></pre>
+<p>
+求跃迁到正能连续谱的总跃迁率 (w)，并分析其对 () 和场强 (E) 的依赖。
+</p>
+<p>
+</p><ol start="2" type="1">
+<li>樱井纯《现代量子力学》第二版，第 5.39 题、5.41 题。
+<p></p></li>
+</ol>
+<h3 class="anchored">
+作业七
+</h3>
+<p>
+</p><ol type="1">
+<li>系统初态为 (H_0) 的本征态 (|<em>i)，受微扰 (W(t)) 作用。记 (W</em>{fi}(t)=<em>f|W(t)|<em>i)，(</em>{fi}=(E_f-E_i)/)。令 (P</em>{if}(t)) 为跃迁到另一本征态 (|<em>f) 的概率，(w</em>{if}(t)=dP_{if}/dt)。
+<p></p></li>
+</ol>
+<p>
+（1）证明在最低非零阶微扰近似下
+</p>
+<pre><code>&lt;div class="aqm-equation"&gt;
+  \[
+  w_{if}(t)=\frac{1}{\hbar^2}\int_0^t
+  e^{i\omega_{fi}\tau}W_{fi}(t)W_{fi}^{*}(t-\tau)\,d\tau
+  +\mathrm{c.c.}
+  \]
+&lt;/div&gt;</code></pre>
+<p>
+现考虑由大量互不作用的同种系统组成的系综，各系统受到独立的平稳随机微扰。用上横线表示系综平均，设
+</p>
+<pre><code>&lt;div class="aqm-equation"&gt;
+  \[
+  \overline{W_{fi}(t)}=0,\qquad
+  g_{fi}(\tau)=\overline{W_{fi}(t)W_{fi}^{*}(t-\tau)}.
+  \]
+&lt;/div&gt;</code></pre>
+<p>
+其中 (g_{fi}()) 在 (_c) 时趋于零，(_c) 为相关时间。
+</p>
+<p>
+（2）求平均跃迁概率 ()，并确定平均跃迁率近似不再随时间变化所需的等待时间 (t_1)。
+</p>
+<p>
+（3）固定 (<em>c)，分析该跃迁率对 (</em>{fi}) 的依赖，并计算 (g_{fi}()=|v_{fi}|<sup>2e</sup>{-/_c})（()）时的结果。
+</p>
+<p>
+（4）设微扰论仅在 (tt_2) 时有效。如何估计 (t_2)？获得与时间无关的跃迁率需满足什么条件？能否推广到 (tt_2)？
+</p>
+<p>
+将上述结果用于 (N) 个自旋 (1/2)、旋磁比为 () 的自由粒子。粒子处于静磁场 (B_0=B_0) 中，(_0=-B_0)，封闭在半径为 (R) 的球形容器内。相邻两次碰壁的平均飞行时间为 (_v)，碰壁持续时间为 (_a_v)。飞行时仅受 (B_0) 作用；碰壁时还受方向随机、均方根幅度为 (b_0) 的表面磁场 (b(t)) 作用。
+</p>
+<p>
+（5）说明下列自相关函数的物理依据：
+</p>
+<pre><code>&lt;div class="aqm-equation"&gt;
+  \[
+  \overline{b_\mu(t)b_\mu(t-\tau)}
+  =\frac{b_0^2}{3}\frac{\tau_a}{\tau_v}e^{-\tau/\tau_a},
+  \qquad \mu=x,y,z,\quad \tau\ge0.
+  \]
+&lt;/div&gt;</code></pre>
+<p>
+不同分量的交叉相关为零。
+</p>
+<p>
+（6）若粒子沿 (z) 方向具有微小的宏观磁化强度 (M_z)，证明
+</p>
+<pre><code>&lt;div class="aqm-equation"&gt;
+  \[
+  \frac{d\mathcal M_z}{dt}=-\frac{\mathcal M_z}{T_1},
+  \]
+&lt;/div&gt;</code></pre>
+<p>
+并用 (,B_0,_a,_v,b_0) 表示纵向弛豫时间 (T_1)。
+</p>
+<p>
+（7）说明如何通过 (T_1) 随 (B_0) 的变化测定 (_a)。
+</p>
+<p>
+（8）说明如何利用不同半径、相同材料容器中的 (T_1) 测量结果确定 (b_0)。
+</p>
+<p>
+</p><ol start="2" type="1">
+<li>系统哈密顿量为：(H_s = + m<sup>2x</sup>2)，坐标算符写为零点涨落:
+<p></p>
+<div class="aqm-equation">
+[ x= x_{zpf}(a + a^),x_{zpf} = ]
+</div>
+<p>
+同时存在热库：
+</p>
+<div class="aqm-equation">
+[ H_B= _{k}(+m_k _k^2 x_k^2), ]
+</div>
+<p>
+系统与热库线性耦合：
+</p>
+<div class="aqm-equation">
+[ H_{SB} = AxF, F = _{k}B_k x_k, ]
+</div>
+<p>
+A 为耦合常数， F 为热库算符。热库算符的非对称量子噪声谱密度定义为：
+</p>
+<div class="aqm-equation">
+[ S_{FF}[]= <em>{-}^{+}dt e^{it} F(t)F(0)<em>B, = (S</em>{FF}[]+S</em>{FF}[-]). ]
+</div></li>
+</ol>
+<p>
+（1）证明：
+</p>
+<pre><code>  &lt;div class="aqm-equation"&gt;
+  \[
+  \frac{d}{dt} \left\langle E \right\rangle = P - \Gamma \left\langle E \right\rangle,
+  \]
+&lt;/div&gt;
+
+&lt;p&gt;其中：&lt;/p&gt;
+&lt;div class="aqm-equation"&gt;
+  \[
+  P = \frac{A^2}{2m}\overline{S_{FF}[\omega]}, \qquad \Gamma = \frac{1}{\hbar^2}A^2 x^2_{zpf}(S_{FF}[\omega] - S_{FF}[-\omega])
+  \]
+&lt;/div&gt;</code></pre>
+<p>
+（2）利用KMS关系，证明量子涨落-耗散关系：
+</p>
+<pre><code>&lt;div class="aqm-equation"&gt;
+  \[
+  \overline{S_{FF}[\omega]} = \coth (\frac{\beta \hbar \omega}{2}) \frac{\hbar \omega m}{A^2}
+  \]
+&lt;/div&gt;</code></pre>
+<p>
+或者证明 (= ) 在高温极限 （(k_B T )）下，退化为经典情况：
+</p>
+<pre><code>&lt;div class="aqm-equation"&gt;
+  \[
+  A^2 \overline{S_{FF}[\omega]} = 2k_B Tm \Gamma.
+  \]
+&lt;/div&gt;</code></pre>
+
+</main></div>
+<style>
+.aqm-course {
+  display: grid;
+  grid-template-columns: 10rem minmax(0, 1fr);
+  column-gap: var(--space-6);
+  align-items: start;
+}
+
+.aqm-course > h2,
+.aqm-course > .section-card {
+  grid-column: 2;
+  min-width: 0;
+}
+
+.aqm-course .aqm-nav {
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  position: sticky;
+  top: var(--space-6);
+  max-height: calc(100vh - var(--space-6) - var(--space-6));
+  overflow-y: auto;
+  padding: var(--space-4);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+}
+
+.aqm-course .aqm-nav-title {
+  margin: 0 0 var(--space-3);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.aqm-course .aqm-nav-list {
+  display: grid;
+  gap: var(--space-1);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.aqm-course .aqm-nav-list li {
+  margin: 0;
+  padding: 0;
+}
+
+.aqm-course .aqm-nav a {
+  display: block;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-lg);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.aqm-course .aqm-nav a:hover,
+.aqm-course .aqm-nav a[aria-current="location"] {
+  background: var(--accent-light);
+  color: var(--accent);
+}
+
+.aqm-course .aqm-nav a[aria-current="location"] {
+  font-weight: 600;
+}
+
+.aqm-course .aqm-nav a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.aqm-course .aqm-assignments > h3 {
+  scroll-margin-top: var(--space-6);
+}
+
+@media (max-width: 960px) {
+  .aqm-course {
+    display: block;
+  }
+
+  .aqm-course .aqm-nav {
+    position: static;
+    max-height: none;
+    margin: var(--space-6) 0;
+  }
+
+  .aqm-course .aqm-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+}
+</style>
+<script>
+(() => {
+  function initAssignmentNav() {
+    const course = document.querySelector(".aqm-course");
+    if (!course || course.querySelector(".aqm-nav")) return;
+
+    const headings = Array.from(
+      course.querySelectorAll(".aqm-assignments > h3")
+    ).filter(heading =>
+      /^作业\s*[零〇一二三四五六七八九十百0-9]+$/.test(
+        heading.textContent.trim()
+      )
+    );
+
+    if (!headings.length) return;
+
+    const nav = document.createElement("nav");
+    nav.className = "aqm-nav";
+    nav.setAttribute("aria-label", "作业目录");
+    nav.innerHTML = `
+      <p class="aqm-nav-title">作业目录</p>
+      <ul class="aqm-nav-list"></ul>
+    `;
+
+    const list = nav.querySelector("ul");
+    const links = headings.map((heading, index) => {
+      if (!heading.id) heading.id = `assignment-${index + 1}`;
+
+      const item = document.createElement("li");
+      const link = document.createElement("a");
+
+      link.href = `#${encodeURIComponent(heading.id)}`;
+      link.textContent = heading.textContent.trim();
+
+      item.append(link);
+      list.append(item);
+      return link;
+    });
+
+    const assignments = course.querySelector(".aqm-assignments");
+    if (assignments) assignments.before(nav);
+
+    function updateActive() {
+      let current = 0;
+
+      headings.forEach((heading, index) => {
+        if (heading.getBoundingClientRect().top <= 96) {
+          current = index;
+        }
+      });
+
+      links.forEach((link, index) => {
+        if (index === current) {
+          link.setAttribute("aria-current", "location");
+        } else {
+          link.removeAttribute("aria-current");
+        }
+      });
+    }
+
+    let scheduled = false;
+    function scheduleUpdate() {
+      if (scheduled) return;
+      scheduled = true;
+
+      requestAnimationFrame(() => {
+        updateActive();
+        scheduled = false;
+      });
+    }
+
+    window.addEventListener("scroll", scheduleUpdate, { passive: true });
+    window.addEventListener("resize", scheduleUpdate);
+    window.addEventListener("load", scheduleUpdate, { once: true });
+    updateActive();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initAssignmentNav, {
+      once: true
+    });
+  } else {
+    initAssignmentNav();
+  }
+})();
+</script>
+
+
+
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+ <!-- /content -->
+
+
+
+
+</body></html>
