@@ -278,7 +278,7 @@ coursework: true
   <p>（2）利用KMS关系，证明量子涨落-耗散关系：</p>
     <div class="aqm-equation">
       \[
-      \overline{S_{FF}[\omega]} = \coth (\frac{\beta \hbar \omega}{2}) \frac{\hbar \omega m}{A^2}
+      \overline{S_{FF}[\omega]} = \coth (\frac{\beta \hbar \omega}{2}) \frac{\hbar \omega m}{A^2}.
       \]
     </div>
   <p>或者证明 \(\beta = \frac{1}{k_B T}\) 在高温极限 （\(k_B T \gg \hbar\omega\)）下，退化为经典情况：</p>
