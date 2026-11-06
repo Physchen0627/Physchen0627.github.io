@@ -30,7 +30,7 @@ coursework: true
   <h2>{{ page.title | escape }}</h2>
 
   <section class="section-card">
-    <h3>2026 年秋季高等量子力学作业汇总</h3>
+    <h3>2026 年秋季《高等量子力学》作业汇总</h3>
     <p>助教办公室：逸夫科技楼南411</p>
     <p>已更新作业次数：{{ page.assignment_count }}</p>
     <p>每周一上课前需交作业</p>
