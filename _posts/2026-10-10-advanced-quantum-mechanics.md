@@ -239,7 +239,7 @@ coursework: true
   <p>2. 系统哈密顿量为：\(H_s = \frac{p^2}{2m} + \frac{1}{2}m\omega^2x^2\)，坐标算符写为零点涨落:</p>
     <div class="aqm-equation">
       \[
-      x= x_{zpf}(a + a^\dagger),\qquad x_{zpf} = \sqrt{\frac{\hbar}{2m\omega}}
+      x= x_{zpf}(a + a^\dagger),\qquad x_{zpf} = \sqrt{\frac{\hbar}{2m\omega}}.
       \]
     </div>
   <p> 同时存在热库：</p>
@@ -251,7 +251,7 @@ coursework: true
   <p>系统与热库线性耦合：</p>
     <div class="aqm-equation">
       \[
-      H_{SB} = AxF, \qquad F = \sum_{k}B_k x_k,
+      H_{SB} = AxF, \qquad F = \sum_{k}B_k x_k.
       \]
     </div>
   <p>A 为耦合常数， F 为热库算符。热库算符的非对称量子噪声谱密度定义为：</p>
@@ -271,14 +271,14 @@ coursework: true
     <p>其中：</p>
     <div class="aqm-equation">
       \[
-      P = \frac{A^2}{2m}\overline{S_{FF}[\omega]}, \qquad \Gamma = \frac{1}{\hbar^2}A^2 x^2_{zpf}(S_{FF}[\omega] - S_{FF}[-\omega])
+      P = \frac{A^2}{2m}\overline{S_{FF}[\omega]}, \qquad \Gamma = \frac{1}{\hbar^2}A^2 x^2_{zpf}(S_{FF}[\omega] - S_{FF}[-\omega]).
       \]
     </div>
 
   <p>（2）利用KMS关系，证明量子涨落-耗散关系：</p>
     <div class="aqm-equation">
       \[
-      \overline{S_{FF}[\omega]} = \coth (\frac{\beta \hbar \omega}{2}) \frac{\hbar \omega m}{A^2}
+      \overline{S_{FF}[\omega]} = \coth (\frac{\beta \hbar \omega}{2}) \frac{\hbar \omega m}{A^2}.
       \]
     </div>
   <p>或者证明 \(\beta = \frac{1}{k_B T}\) 在高温极限 （\(k_B T \gg \hbar\omega\)）下，退化为经典情况：</p>
