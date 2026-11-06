@@ -67,7 +67,7 @@ permalink: /gallery/japan-2026/
      alt="Prof.Dr.Yukawa"
      style="max-width: 100%; height: auto;">
 
-*Prof.Dr.Yukawa*
+*Dr.Yukawa*
 
 <img src="{{ '/images/gallery/japan-2026/kinkaku-ji.jpg' | relative_url }}"
      alt="Kinkaku-ji"
