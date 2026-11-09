@@ -294,17 +294,16 @@ coursework: true
   \[
   R_1(\theta) =
   (\theta)=(x_1(\theta),y_1(\theta),z_1(\theta)),
-  \theta \in [0,2\pi].
-  \]
-  </div>
-  <div class="aqm-equation">
-  \[
+  \theta \in [0,2\pi],\\
   R_2(\varphi) =
   (\varphi)=(x_2(\varphi),y_2(\varphi),z_2(\varphi)),
   \varphi \in [0,2\pi].
   \]
   </div>
-<p>满足：\(R_1(0)=R_1(2\pi),R_2(0)=R_2(2\pi)\)。构造一个拓扑数 \(N=N[R_1,R_2]\),使其能描述两条曲线的套链情况，并说明：</p>
+<p>满足：\(R_1(0)=R_1(2\pi),R_2(0)=R_2(2\pi)\)。</p>
+
+<p>构造一个拓扑数 \(N=N[R_1,R_2]\),使其能描述两条曲线的套链情况，说明：<p>
+
 <p>（1）如何由电磁学的知识得到 \(N\)的积分表达式。</p>
 
 <p>（2）为什么 \(N\)是整数。</p>
