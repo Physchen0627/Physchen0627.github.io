@@ -315,7 +315,7 @@ coursework: true
 <p>（4）为什么 \(N\)可以取不同的整数值。</p>
 
   
-</section>
+  </section>
 </div>
 
 <style>
