@@ -288,6 +288,31 @@ coursework: true
       \]
     </div>
 
+  <h3>作业八</h3>
+  <p>设三维空间中两条光滑、有向、互不相交的曲线：</p>
+  <div class="aqm-equation">
+  \[
+  R_1(\theta) =
+  (\theta)=(x_1(\theta),y_1(\theta),z_1(\theta)),
+  \theta \in [0,2\pi].
+  \]
+  </div>
+  <div class="aqm-equation">
+  \[
+  R_2(\varphi) =
+  (\varphi)=(x_2(\varphi),y_2(\varphi),z_2(\varphi)),
+  \varphi \in [0,2\pi].
+  \]
+  </div>
+<p>满足：\(R_1(0)=R_1(2\pi),R_2(0)=R_2(2\pi)\)。构造一个拓扑数 \(N=N[R_1,R_2]\),使其能描述两条曲线的套链情况，并说明：</p>
+<p>（1）如何由电磁学的知识得到 \(N\)的积分表达式。</p>
+
+<p>（2）为什么 \(N\)是整数。</p>
+
+<p>（3）为什么两条曲线在保持互不相交的连续变形中，拓扑数 \(N\)保持不变。</p>
+
+<p>（4）为什么 \(N\)可以取不同的整数值。</p>
+
   
   </section>
 </div>
