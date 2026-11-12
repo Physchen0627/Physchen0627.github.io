@@ -317,18 +317,18 @@ coursework: true
   <div class="aqm-equation">
   \[
   \begin{aligned}
-    \vec{\mathbf{A}_{-}}
-      &= \vec{e_{\varphi}}\frac{(1 - cos\theta)}{d sin\theta}\frac{1}{2}
+    \vv{\mathbf{A}_{-}}
+      &= \vv{e_{\varphi}}\frac{(1 - cos\theta)}{d sin\theta}\frac{1}{2}
   \end{aligned}
   \]
 </div>
-<p>同时有：\(\vec{\mathbf{B}} = \frac{1}{2}\frac{\vec{d}}{d^3}\)。验证关系：</p>
+<p>同时有：\(\vv{\mathbf{B}} = \frac{1}{2}\frac{\vv{d}}{d^3}\)。验证关系：</p>
 <div class="aqm-equation">
   \[
   \begin{aligned}
-    \nabla \times  \vec{\mathbf{A}_{-}}
+    \nabla \times  \vv{\mathbf{A}_{-}}
     &=
-    \vec{\mathbf{B}}
+    \vv{\mathbf{B}}
   \end{aligned}
   \]
 </div>
