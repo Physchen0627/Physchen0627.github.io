@@ -313,27 +313,17 @@ coursework: true
 <p>（4）为什么 \(N\)可以取不同的整数值。</p>
 
 <h3>作业九</h3>
-  <p>
-    考虑一个二维两能带系统，其 Bloch 哈密顿量可以写为
-  </p>
-
+  <p>1.考虑一个二维两能带系统，其哈密顿量可以写为</p>
   <div class="aqm-equation">
     \[
     H(\mathbf{k})=\mathbf{d}(\mathbf{k})\cdot\boldsymbol{\sigma},
     \]
   </div>
 
-  <p>
-    其中 \(\boldsymbol{\sigma}=(\sigma_x,\sigma_y,\sigma_z)\) 为 Pauli 矩阵，
-    \(\mathbf{k}=(k_1,k_2)\) 为二维动量。
-    本题研究该系统的 Berry 曲率以及拓扑相变。
-  </p>
+  <p> 其中 \(\boldsymbol{\sigma}=(\sigma_x,\sigma_y,\sigma_z)\) 为 Pauli 矩阵，
+    \(\mathbf{k}=(k_1,k_2)\) 为二维动量。</p>
 
-  <p><strong>（1）线性两能带模型的 Berry 曲率。</strong></p>
-
-  <p>
-    考虑如下哈密顿量：
-  </p>
+  <p>（1）考虑如下哈密顿量：</p>
 
   <div class="aqm-equation">
     \[
@@ -383,37 +373,15 @@ coursework: true
     \(\operatorname{sgn}(\det D)\) 之间的关系。
   </p>
 
-  <p><strong>（2）拓扑相变与能隙闭合。</strong></p>
-
-  <p>
-    根据上述模型的能谱
-  </p>
-
-  <div class="aqm-equation">
-    \[
-    E_\pm(\mathbf k)=\pm|\mathbf d(\mathbf k)|,
-    \]
-  </div>
-
-  <p>
-    讨论系统的能隙如何随参数 \(M\) 变化，确定发生能隙闭合的条件。
-    进一步分析当 \(M\) 改变符号时，Berry 曲率积分如何变化，
-    并解释为什么能隙闭合与拓扑相变密切相关。
-  </p>
-
-  <p><strong>（3）高阶动量耦合模型。</strong></p>
-
-  <p>
-    进一步考虑如下二维两能带哈密顿量：
-  </p>
+  <p>（1）进一步考虑如下二维两能带哈密顿量：</p>
 
   <div class="aqm-equation">
     \[
     H(\mathbf k)
     =
     M\sigma_z
-    +(k_+)^n\sigma_-
-    +(k_-)^n\sigma_+,
+    +(k_+)^{2026}\sigma_-
+    +(k_-)^{2026}\sigma_+,
     \]
   </div>
 
@@ -429,7 +397,7 @@ coursework: true
   </div>
 
   <p>
-    \(n\) 为正整数。将该哈密顿量写成
+    将该哈密顿量写成
     \(\mathbf d(\mathbf k)\cdot\boldsymbol{\sigma}\) 的形式，
     分析其在动量空间中的绕数，并讨论参数 \(n\) 对 Berry 曲率积分及
     系统拓扑性质的影响。
