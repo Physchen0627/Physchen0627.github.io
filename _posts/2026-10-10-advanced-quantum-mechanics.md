@@ -313,18 +313,49 @@ coursework: true
 <p>（4）为什么 \(N\)可以取不同的整数值。</p>
 
 <h3>作业九</h3>
-  <p>1. 考虑一个在球坐标系中定义的矢势\(\mathbf{A}_{-}\)。该矢势在南极点（\(\theta=\pi\)）处存在奇点，其表达式为：</p>
+  <p>考虑二维两能带体系，其哈密顿量可以写作：</p>
 
-    <div class="aqm-equation">
+  <div class="aqm-equation">
       \[
-      \begin{aligned}
-        \mathbf{A}_{-}
+        H(\mathbf{k})
         &=
-        \mathbf{e}_{\varphi}
-        \frac{1-\cos\theta}{2d\sin\theta}.
-      \end{aligned}
+        \mathbf{d}(\mathbf(k)) \cdot \boldsymbol{\sigma},\qquad \mathbf(k) = (k_1, k_2),
       \]
-    </div>
+  </div>
+
+  <p>其中\(\boldsymbol{\sigma}=(\sigma_x, \sigma_y, \sigma_z)\)为pauli矩阵，记\(d = |\mathbf{d}|\)。体系的berry曲率为：</p>
+   <div class="aqm-equation">
+    \[
+    F_{12}(\mathbf{k})
+    &=
+    \frac{1}{2 d^3}
+    \mathbf d\cdot
+    \left(
+    \frac{\partial\mathbf d}{\partial k_1}
+    \times
+    \frac{\partial\mathbf d}{\partial k_2}
+    \right)
+    \],
+  </div>
+  <p>并定义拓扑数：</p>
+   <div class="aqm-equation">
+    \[
+    \frac{1}{2\pi}
+    \int_{-\infty}^{+\infty}dk_1
+    \int_{-\infty}^{+\infty}dk_2\,F_{12}(\mathbf{k}).
+    \].
+  </div>
+
+  <p>2. 考虑一个在球坐标系中定义的矢势\(\mathbf{A}_{-}\)。该矢势在南极点（\(\theta=\pi\)）处存在奇点，其表达式为：</p>
+
+  <div class="aqm-equation">
+    \[
+      \mathbf{A}_{-}
+      &=
+      \mathbf{e}_{\varphi}
+      \frac{1-\cos\theta}{2d\sin\theta}.
+      \]
+  </div>
 
     <p>同时，给定对应的磁场为：</p>
 
