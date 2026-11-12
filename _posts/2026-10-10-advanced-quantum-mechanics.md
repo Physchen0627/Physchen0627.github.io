@@ -340,20 +340,15 @@ coursework: true
       \]
     </div>
 
-    <p>
-      其中，\(d\) 表示位置矢量的模长，\(\mathbf{e}_{\varphi}\)
-      为球坐标系中的方位角方向单位矢量。
-    </p>
+    <p>其中，\(d\) 表示位置矢量的模长，\(\mathbf{e}_{\varphi}\)为球坐标系中的方位角方向单位矢量。</p>
 
     <p><strong>验证：</strong>证明上述矢势满足以下关系：</p>
 
     <div class="aqm-equation">
       \[
-      \boxed{
         \nabla\times\mathbf{A}_{-}
         =
         \mathbf{B}
-      }
       \]
     </div>
 
