@@ -317,15 +317,18 @@ coursework: true
 
   <div class="aqm-equation">
       \[
+      \begin{aligned}
         H(\mathbf{k})
         &=
         \mathbf{d}(\mathbf(k)) \cdot \boldsymbol{\sigma},\qquad \mathbf(k) = (k_1, k_2),
+      \end{aligned}
       \]
   </div>
 
   <p>其中\(\boldsymbol{\sigma}=(\sigma_x, \sigma_y, \sigma_z)\)为pauli矩阵，记\(d = |\mathbf{d}|\)。体系的berry曲率为：</p>
    <div class="aqm-equation">
     \[
+    \begin{aligned}
     F_{12}(\mathbf{k})
     &=
     \frac{1}{2 d^3}
@@ -334,38 +337,43 @@ coursework: true
     \frac{\partial\mathbf d}{\partial k_1}
     \times
     \frac{\partial\mathbf d}{\partial k_2}
-    \right)
-    \],
+    \right),
+    \end{aligned}
+    \]
   </div>
   <p>并定义拓扑数：</p>
    <div class="aqm-equation">
     \[
+    \begin{aligned}
     \frac{1}{2\pi}
     \int_{-\infty}^{+\infty}dk_1
     \int_{-\infty}^{+\infty}dk_2\,F_{12}(\mathbf{k}).
-    \].
+    \end{aligned}
+    \]
   </div>
 
   <p>2. 考虑一个在球坐标系中定义的矢势\(\mathbf{A}_{-}\)。该矢势在南极点（\(\theta=\pi\)）处存在奇点，其表达式为：</p>
 
   <div class="aqm-equation">
     \[
+    \begin{aligned}
       \mathbf{A}_{-}
       &=
       \mathbf{e}_{\varphi}
       \frac{1-\cos\theta}{2d\sin\theta}.
-      \]
+    \end{aligned}
+    \]
   </div>
 
-    <p>同时，给定对应的磁场为：</p>
+  <p>同时，给定对应的磁场为：</p>
 
-    <div class="aqm-equation">
-      \[
-      \mathbf{B}
-      =
-      \frac{1}{2}\frac{\mathbf{d}}{d^3}.
-      \]
-    </div>
+  <div class="aqm-equation">
+    \[
+    \mathbf{B}
+    =
+    \frac{1}{2}\frac{\mathbf{d}}{d^3}.
+    \]
+  </div>
 
     <p>其中，\(d\) 表示位置矢量的模长，\(\mathbf{e}_{\varphi}\)为球坐标系中的方位角方向单位矢量。</p>
 
