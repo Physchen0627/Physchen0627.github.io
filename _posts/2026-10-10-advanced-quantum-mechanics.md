@@ -328,7 +328,7 @@ coursework: true
   \begin{aligned}
     \nabla \times  \vv{\mathbf{A}_{-}}
     &=
-    \vv{\mathbf{B}}
+    \vb{B}
   \end{aligned}
   \]
 </div>
