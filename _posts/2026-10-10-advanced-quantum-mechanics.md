@@ -313,44 +313,127 @@ coursework: true
 <p>（4）为什么 \(N\)可以取不同的整数值。</p>
 
 <h3>作业九</h3>
-  <p>考虑二维两能带体系，其哈密顿量可以写作：</p>
+  <p>
+    考虑一个二维两能带系统，其 Bloch 哈密顿量可以写为
+  </p>
 
   <div class="aqm-equation">
-      \[
-      \begin{aligned}
-        H(\mathbf{k})
-        &=
-        \mathbf{d}(\mathbf(k)) \cdot \boldsymbol{\sigma},\qquad \mathbf(k) = (k_1, k_2),
-      \end{aligned}
-      \]
+    \[
+    H(\mathbf{k})=\mathbf{d}(\mathbf{k})\cdot\boldsymbol{\sigma},
+    \]
   </div>
 
-  <p>其中\(\boldsymbol{\sigma}=(\sigma_x, \sigma_y, \sigma_z)\)为pauli矩阵，记\(d = |\mathbf{d}|\)。体系的berry曲率为：</p>
-   <div class="aqm-equation">
+  <p>
+    其中 \(\boldsymbol{\sigma}=(\sigma_x,\sigma_y,\sigma_z)\) 为 Pauli 矩阵，
+    \(\mathbf{k}=(k_1,k_2)\) 为二维动量。
+    本题研究该系统的 Berry 曲率以及拓扑相变。
+  </p>
+
+  <p><strong>（1）线性两能带模型的 Berry 曲率。</strong></p>
+
+  <p>
+    考虑如下哈密顿量：
+  </p>
+
+  <div class="aqm-equation">
     \[
-    \begin{aligned}
-    F_{12}(\mathbf{k})
-    &=
-    \frac{1}{2 d^3}
+    H(\mathbf{k})
+    =
+    \sum_{\alpha=1}^{2}\sum_{\beta=x,y}
+    \sigma_\beta D_{\beta\alpha}k_\alpha
+    +M\sigma_z,
+    \]
+  </div>
+
+  <p>
+    其中 \(D\) 为一个实数 \(2\times 2\) 矩阵，\(M\) 为质量参数。
+    将哈密顿量写成
+    \(H(\mathbf{k})=\mathbf{d}(\mathbf{k})\cdot\boldsymbol{\sigma}\)
+    的形式，并利用
+  </p>
+
+  <div class="aqm-equation">
+    \[
+    F_{12}
+    =
+    \frac{1}{2|\mathbf d|^3}
     \mathbf d\cdot
     \left(
     \frac{\partial\mathbf d}{\partial k_1}
     \times
     \frac{\partial\mathbf d}{\partial k_2}
-    \right),
-    \end{aligned}
+    \right)
     \]
   </div>
-  <p>并定义拓扑数：</p>
-   <div class="aqm-equation">
+
+  <p>
+    推导该模型的 Berry 曲率表达式，并计算其在整个二维动量平面上的积分
+  </p>
+
+  <div class="aqm-equation">
     \[
-    \begin{aligned}
     \frac{1}{2\pi}
     \int_{-\infty}^{+\infty}dk_1
-    \int_{-\infty}^{+\infty}dk_2\,F_{12}(\mathbf{k}).
-    \end{aligned}
+    \int_{-\infty}^{+\infty}dk_2\,F_{12}.
     \]
   </div>
+
+  <p>
+    说明积分结果与 \(\operatorname{sgn}(M)\) 以及
+    \(\operatorname{sgn}(\det D)\) 之间的关系。
+  </p>
+
+  <p><strong>（2）拓扑相变与能隙闭合。</strong></p>
+
+  <p>
+    根据上述模型的能谱
+  </p>
+
+  <div class="aqm-equation">
+    \[
+    E_\pm(\mathbf k)=\pm|\mathbf d(\mathbf k)|,
+    \]
+  </div>
+
+  <p>
+    讨论系统的能隙如何随参数 \(M\) 变化，确定发生能隙闭合的条件。
+    进一步分析当 \(M\) 改变符号时，Berry 曲率积分如何变化，
+    并解释为什么能隙闭合与拓扑相变密切相关。
+  </p>
+
+  <p><strong>（3）高阶动量耦合模型。</strong></p>
+
+  <p>
+    进一步考虑如下二维两能带哈密顿量：
+  </p>
+
+  <div class="aqm-equation">
+    \[
+    H(\mathbf k)
+    =
+    M\sigma_z
+    +(k_+)^n\sigma_-
+    +(k_-)^n\sigma_+,
+    \]
+  </div>
+
+  <p>
+    其中
+  </p>
+
+  <div class="aqm-equation">
+    \[
+    k_\pm=k_1\pm ik_2,\qquad
+    \sigma_\pm=\frac{\sigma_x\pm i\sigma_y}{2},
+    \]
+  </div>
+
+  <p>
+    \(n\) 为正整数。将该哈密顿量写成
+    \(\mathbf d(\mathbf k)\cdot\boldsymbol{\sigma}\) 的形式，
+    分析其在动量空间中的绕数，并讨论参数 \(n\) 对 Berry 曲率积分及
+    系统拓扑性质的影响。
+  </p>
 
   <p>2. 考虑一个在球坐标系中定义的矢势\(\mathbf{A}_{-}\)。该矢势在南极点（\(\theta=\pi\)）处存在奇点，其表达式为：</p>
 
