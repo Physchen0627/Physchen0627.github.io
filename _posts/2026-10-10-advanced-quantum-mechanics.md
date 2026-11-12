@@ -313,25 +313,49 @@ coursework: true
 <p>（4）为什么 \(N\)可以取不同的整数值。</p>
 
 <h3>作业九</h3>
-  <p>对于一个在南极点定义不良好的矢势：</p>
-  <div class="aqm-equation">
-  \[
-  \begin{aligned}
-    \vv{\mathbf{A}_{-}}
-      &= \vv{e_{\varphi}}\frac{(1 - cos\theta)}{d sin\theta}\frac{1}{2}
-  \end{aligned}
-  \]
-</div>
-<p>同时有：\(\vv{\mathbf{B}} = \frac{1}{2}\frac{\vv{d}}{d^3}\)。验证关系：</p>
-<div class="aqm-equation">
-  \[
-  \begin{aligned}
-    \nabla \times  \vv{\mathbf{A}_{-}}
-    &=
-    \vb{B}
-  \end{aligned}
-  \]
-</div>
+  <p>
+      考虑一个在球坐标系中定义的矢势
+      \(\mathbf{A}_{-}\)。该矢势在南极点（\(\theta=\pi\)）处存在奇点，
+      其表达式为：
+  </p>
+
+    <div class="aqm-equation">
+      \[
+      \begin{aligned}
+        \mathbf{A}_{-}
+        &=
+        \mathbf{e}_{\varphi}
+        \frac{1-\cos\theta}{2d\sin\theta}.
+      \end{aligned}
+      \]
+    </div>
+
+    <p>同时，给定对应的磁场为：</p>
+
+    <div class="aqm-equation">
+      \[
+      \mathbf{B}
+      =
+      \frac{1}{2}\frac{\mathbf{d}}{d^3}.
+      \]
+    </div>
+
+    <p>
+      其中，\(d\) 表示位置矢量的模长，\(\mathbf{e}_{\varphi}\)
+      为球坐标系中的方位角方向单位矢量。
+    </p>
+
+    <p><strong>验证：</strong>证明上述矢势满足以下关系：</p>
+
+    <div class="aqm-equation">
+      \[
+      \boxed{
+        \nabla\times\mathbf{A}_{-}
+        =
+        \mathbf{B}
+      }
+      \]
+    </div>
 
   </section>
 </div>
