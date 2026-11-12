@@ -312,6 +312,35 @@ coursework: true
 
 <p>（4）为什么 \(N\)可以取不同的整数值。</p>
 
+<h3>作业八</h3>
+  <p>对于一个在南极点定义不良好的矢势：</p>
+  <div class="aqm-equation">
+  \[
+  \begin{aligned}
+    \vec{\mathbf{A}_{-}}
+      &= \vec{e_{\varphi}}\frac{(1 - cos\theta)}{d sin\theta}\frac{1}{2}
+  \end{aligned}
+  \]
+</div>
+<p>同时有：\(\vec{\mathbf{B}} = \frac{1}{2}\frac{\vec{d}}{d^3}\)。验证关系：</p>
+<div class="aqm-equation">
+  \[
+  \begin{aligned}
+    \nabla \times  \vec{\mathbf{A}_{-}}
+    &=
+    \vec{\mathbf{B}}
+  \end{aligned}
+  \]
+</div>
+
+<p>（1）如何由电磁学的知识得到 \(N\)的积分表达式。</p>
+
+<p>（2）为什么 \(N\)是整数。</p>
+
+<p>（3）为什么两条曲线在保持互不相交的连续变形中，拓扑数 \(N\)保持不变。</p>
+
+<p>（4）为什么 \(N\)可以取不同的整数值。</p>
+
   
   </section>
 </div>
