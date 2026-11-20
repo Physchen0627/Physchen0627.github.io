@@ -438,6 +438,62 @@ coursework: true
       \]
     </div>
 
+  <h3>作业十</h3>
+  <p>1.考虑二维两能带模型，其布洛赫哈密顿量为： </p>
+  <div class="aqm-equation">
+    \[
+    \begin{aligned}
+      H(\mathbf{k})
+      &= \sin(2k_x)\,\sigma_x + \sin(2k_y)\,\sigma_y \\
+      &\quad + \bigl(M-\cos k_x-\cos k_y\bigr)\sigma_z .
+    \end{aligned}
+    \]
+  </div>
+  <p>
+    取第一布里渊区为 \((k_x,k_y)\in(-\pi,\pi)^2)。
+    求能隙闭合时的全部临界参数 \(M\) 及其对应的动量点，
+    并按课堂上的符号约定计算各有隙区间内下能带的陈数 \(C\)。
+  </p>
+
+  <p>
+    2.设含时哈密顿量 \(H(t)=H(\mathbf{R}(t))\) 的瞬时能谱非简并。
+    简记瞬时本征态 \(\lvert n(\mathbf{R}(t))\rangle\) 为
+    \(\lvert n(t)\rangle\)，对应的本征能量为 \(E_n(t)\)。
+    将系统状态展开为
+  </p>
+  <div class="aqm-equation">
+    \[
+    \begin{aligned}
+      \lvert\Psi(t)\rangle
+        &= \sum_n C_n(t)\,e^{-i\theta_n(t)}\lvert n(t)\rangle, \\
+      \theta_n(t)
+        &= \frac{1}{\hbar}\int_0^t E_n(t')\,\mathrm{d}t' .
+    \end{aligned}
+    \]
+  </div>
+  <p>从含时薛定谔方程和瞬时本征方程出发，推导</p>
+  <div class="aqm-equation">
+    \[
+    \begin{aligned}
+      \frac{\mathrm{d}C_\ell(t)}{\mathrm{d}t}
+      &= -C_\ell(t)
+      \left\langle \ell(t)\left|
+        \frac{\partial}{\partial t}
+      \right|\ell(t)\right\rangle \\
+      &\quad - \sum_{m\ne\ell}
+      C_m(t)\,e^{-i[\theta_m(t)-\theta_\ell(t)]}
+      \frac{
+        \left\langle \ell(t)\left|
+          \frac{\partial H(t)}{\partial t}
+        \right|m(t)\right\rangle
+      }{
+        E_m(t)-E_\ell(t)
+      } .
+    \end{aligned}
+    \]
+  </div>
+</section>
+
   </section>
 </div>
 
