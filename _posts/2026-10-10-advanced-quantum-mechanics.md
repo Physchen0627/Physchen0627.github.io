@@ -492,7 +492,6 @@ coursework: true
     \end{aligned}
     \]
   </div>
-</section>
 
   </section>
 </div>
