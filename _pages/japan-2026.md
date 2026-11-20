@@ -117,7 +117,7 @@ permalink: /gallery/japan-2026/
      alt="University of tokyo"
      style="max-width: 100%; height: auto;">
 
-*University of tokyo*
+*University of Tokyo*
 
 <img src="{{ '/images/gallery/japan-2026/akihabara.jpg' | relative_url }}"
      alt="akihabara"
