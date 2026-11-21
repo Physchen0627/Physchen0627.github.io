@@ -465,7 +465,7 @@ coursework: true
     \[
     \begin{aligned}
       \lvert\Psi(t)\rangle
-        &= \sum_n C_n(t)\,e^{-i\theta_n(t)}\lvert n(t)\rangle, \quad
+        &= \sum_n C_n(t)\,e^{-i\theta_n(t)}\lvert n(t)\rangle, \\
       \theta_n(t)
         &= \frac{1}{\hbar}\int_0^t E_n(t')\,\mathrm{d}t' .
     \end{aligned}
