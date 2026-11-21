@@ -465,13 +465,13 @@ coursework: true
     \[
     \begin{aligned}
       \lvert\Psi(t)\rangle
-        &= \sum_n C_n(t)\,e^{-i\theta_n(t)}\lvert n(t)\rangle, \\
+        &= \sum_n C_n(t)\,e^{-i\theta_n(t)}\lvert n(t)\rangle, \quad
       \theta_n(t)
         &= \frac{1}{\hbar}\int_0^t E_n(t')\,\mathrm{d}t' .
     \end{aligned}
     \]
   </div>
-  <p>从含时薛定谔方程和瞬时本征方程出发，推导</p>
+  <p>从含时薛定谔方程和瞬时本征方程出发，推导：</p>
   <div class="aqm-equation">
     \[
     \begin{aligned}
