@@ -445,7 +445,7 @@ coursework: true
     \begin{aligned}
       H(\mathbf{k})
       &= \sin(2k_x)\,\sigma_x + \sin(2k_y)\,\sigma_y 
-      &\quad + \bigl(M-\cos k_x-\cos k_y\bigr)\sigma_z .
+       + \bigl(M-\cos k_x-\cos k_y\bigr)\sigma_z .
     \end{aligned}
     \]
   </div>
