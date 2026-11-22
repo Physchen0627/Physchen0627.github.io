@@ -2,7 +2,7 @@
 title: "A normal day"
 layout: gridlay
 sitemap: false
-permalink: /gallery/japan-2026/
+permalink: /gallery/a-normal-day/
 ---
 <style>
 .japan-gallery p {
