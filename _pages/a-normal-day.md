@@ -23,10 +23,8 @@ permalink: /gallery/a-normal-day/
 
 <div class="section-card japan-gallery">
 
-### Wuhan
-
 <img src="{{ '/images/gallery/\anormalday\anormalday.jpg' | relative_url }}"
-     alt="The tower of Sun"
+     alt="a-normal-day"
      style="max-width: 100%; height: auto;">
 
 *She accepted his confession of love.*
