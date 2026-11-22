@@ -19,7 +19,7 @@ permalink: /gallery/japan-2026/
 }
 </style>
 
-## 22 November 2026
+## 21 November 2026
 
 <div class="section-card japan-gallery">
 
