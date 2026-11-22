@@ -29,6 +29,6 @@ permalink: /gallery/a-normal-day/
      alt="a-normal-day"
      style="max-width: 100%; height: auto;">
 
-*And so, it began.*
+*He took a chance. She said yes.*
 
 </div>
