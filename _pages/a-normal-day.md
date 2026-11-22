@@ -23,7 +23,7 @@ permalink: /gallery/a-normal-day/
 
 <div class="section-card japan-gallery">
 
-###   A normal day
+### A Normal Day
 
 <img src="{{ '/images/gallery/anormalday/anormalday.jpg' | relative_url }}"
      alt="a-normal-day"
