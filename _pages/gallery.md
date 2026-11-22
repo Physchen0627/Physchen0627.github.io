@@ -18,11 +18,9 @@ A collection of photographs from my travels, academic life, and everyday moments
     </a>
   </div>
 
-  <!-- 中间短分隔线 -->
   <div style="
     width: 40px;
     border-top: 1px solid var(--border-color);
-    opacity: 0.5;
     margin: 0.15rem 0;
   "></div>
 
