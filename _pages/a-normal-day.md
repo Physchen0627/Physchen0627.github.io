@@ -29,6 +29,6 @@ permalink: /gallery/a-normal-day/
      alt="a-normal-day"
      style="max-width: 100%; height: auto;">
 
-*She accepted his confession of love.*
+*And so, it began.*
 
 </div>
