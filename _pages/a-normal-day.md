@@ -23,7 +23,7 @@ permalink: /gallery/a-normal-day/
 
 <div class="section-card japan-gallery">
 
-### Wuhan
+###   A normal day
 
 <img src="{{ '/images/gallery/anormalday/anormalday.jpg' | relative_url }}"
      alt="a-normal-day"
