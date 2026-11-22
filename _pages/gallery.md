@@ -18,7 +18,7 @@ Japan, Summer 2026
 
 <div class="news-item" style="padding: 1rem 0; border-bottom: 1px solid var(--border-color);">
 <a href="{{ '/gallery/anormalday/' | relative_url }}" style="font-weight: 600;">
-Japan, Summer 2026
+A normal day, 21 November 2026
 </a>
 </div>
 
