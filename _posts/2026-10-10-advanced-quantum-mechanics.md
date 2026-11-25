@@ -373,7 +373,7 @@ coursework: true
     \(\operatorname{sgn}(\det D)\) 之间的关系。
   </p>
 
-  <p>（1）进一步考虑如下二维两能带哈密顿量：</p>
+  <p>（2）进一步考虑如下二维两能带哈密顿量：</p>
 
   <div class="aqm-equation">
     \[
