@@ -494,7 +494,7 @@ coursework: true
   </div>
 
   <h3>作业十一</h3>
-  <p>考虑二维平面内电子，沿强磁场\\(mathbf{B} = B\hat{e_{z}}\)方向运动，取\(A=(0,B_{x},0)\)(Landau规范)，原哈密顿量为：</p>
+  <p>1.考虑二维平面内电子，沿强磁场\(mathbf{B} = B\hat{e_{z}}\)方向运动，取\(A=(0,B_{x},0)\)(Landau规范)，原哈密顿量为：</p>
   <div class="aqm-equation">
   \[
   \begin{aligned}
@@ -512,7 +512,7 @@ coursework: true
   \end{aligned}
   \]
   </div>
-<p>现加入一电场\(V=eE_{x}\)</p>
+<p>现加入一电场\(V=eE_{x}\), 求解：</p>
 
 <p>（1）求加入电场后的本征波函数。</p>
 
@@ -521,7 +521,6 @@ coursework: true
 <p>（3）求电子沿着\(y\)方向的运动速度。</p>
 
 <p>（4）为什么 \(N\)可以取不同的整数值。</p>
-</div>
 
   </section>
 </div>
