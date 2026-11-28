@@ -426,17 +426,17 @@ coursework: true
     \]
   </div>
 
-    <p>其中，\(d\) 表示位置矢量的模长，\(\mathbf{e}_{\varphi}\)为球坐标系中的方位角方向单位矢量。</p>
+  <p>其中，\(d\) 表示位置矢量的模长，\(\mathbf{e}_{\varphi}\)为球坐标系中的方位角方向单位矢量。</p>
 
-    <p>证明上述矢势满足以下关系：</p>
+  <p>证明上述矢势满足以下关系：</p>
 
-    <div class="aqm-equation">
+  <div class="aqm-equation">
       \[
         \nabla\times\mathbf{A}_{-}
         =
         \mathbf{B}
       \]
-    </div>
+  </div>
 
   <h3>作业十</h3>
   <p>1.考虑二维两能带模型，其布洛赫哈密顿量为： </p>
@@ -493,6 +493,8 @@ coursework: true
     \]
   </div>
 
+  <p>3.利用\(I--eV\)，其中\(V=\frac{dr}{dt}=\frac{1}{i\hbar}[r,H]\)，推导一阶修正下的<I>。 </p>
+  
   <h3>作业十一</h3>
   <p>1.考虑二维平面内电子，沿强磁场\(\mathbf{B} = B\hat{e_{z}}\)方向运动，取\(A=(0,B_{x},0)\)(Landau规范)，原哈密顿量为：</p>
   <div class="aqm-equation">
