@@ -493,7 +493,17 @@ coursework: true
     \]
   </div>
 
-  <p>3.利用\(I--eV\)，其中\(V=\frac{dr}{dt}=\frac{1}{i\hbar}[r,H]\)，推导一阶修正下的<I>。 </p>
+  <p>3.利用\(I=-eV\)，其中有:</p>
+  <div class="aqm-equation">
+    \[
+    \begin{aligned}
+      V
+      &= \frac{ddr}{dt}
+      &= \frac{1}{i\hbar}[r,H],
+    \end{aligned}
+    \]
+  </div>
+  <p>推导一阶修正下的< I >。</p>
   
   <h3>作业十一</h3>
   <p>1.考虑二维平面内电子，沿强磁场\(\mathbf{B} = B\hat{e_{z}}\)方向运动，取\(A=(0,B_{x},0)\)(Landau规范)，原哈密顿量为：</p>
